@@ -1,0 +1,50 @@
+// Header
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        font-family: 'Quicksand-Bold';
+        font-weight: 700;
+        padding-top: 22px;
+
+        &--left {
+            display: flex;
+
+            &-item {
+                list-style: none;
+                margin-right: 30px;
+
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+        .logo {}
+
+        &--right {
+            display: flex;
+
+            &-item {
+                list-style: none;
+                margin-right: 30px;
+
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+
+                img {
+                    height: 24px;
+                }
+            }
+        }
+    }
+}

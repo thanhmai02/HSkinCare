@@ -1,0 +1,25 @@
+.first-main{
+    background-color: #fcf8ef;
+    &--row{
+        padding: 50px 0;
+        .col-3{
+            text-align: center;
+            border-right: 2px solid #C0C0C0;
+            &:last-child{
+                border: none;
+            }
+            img{
+                max-width: 70px;
+                margin-bottom: 15px;
+            }
+            h2{
+                font-size: 20px;
+                font-family: 'Quicksand-Bold';
+                font-weight: 700;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}

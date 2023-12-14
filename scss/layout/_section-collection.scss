@@ -1,0 +1,112 @@
+.collection-main {
+    background-color: #fcf8ef;
+
+    &--collect {
+        text-align: center;
+        padding: 40px;
+
+        &-title {
+            position: relative;
+            img{
+                width: 130px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                top: 50%;
+            }
+            h2 {
+                font-size: 35px;
+                font-family: 'CormorantGaramond-MediumItalic';
+                font-weight: 300;
+            }
+        }
+    }
+
+    &--product {
+        padding-bottom: 50px;
+        &-list {
+            &-pro {
+                background-color: white;
+
+                &--img {
+                    padding: 20px 20px;
+
+                    .image-pro {
+                        background-color: #fcf8ef;
+                        text-align: center;
+                        img{
+                            object-fit: contain;
+                            min-height: 80%;
+                            max-height: 80%;
+                        }
+                    }
+
+                    &-cost {
+                        display: flex;
+                        align-items: center;
+
+                        .butbuy {
+                            background-color: white;
+                            color: red;
+                            border: 1px solid;
+                            border-radius: 10px;
+                        }
+
+                        p {
+                            color: gray;
+                            font-size: 12px;
+                            text-decoration: line-through;
+                        }
+
+                        h3 {
+                            font-size: 15px;
+                            margin: 0 5px;
+                        }
+
+                        &-gia {
+                            display: flex;
+                        }
+                    }
+
+                    &-oder {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .but {
+                            background-color: #FFCC66;
+                            min-width: 220px;
+                            min-height: 40px;
+                            border: none;
+                            border-radius: 25px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+.title-head{
+    text-align: center;
+        padding: 40px;
+        p{
+            color: #555555;
+        }
+
+        .title-main {
+            position: relative;
+            img{
+                width: 130px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                top: 50%;
+            }
+            h2 {
+                font-size: 35px;
+                font-family: 'CormorantGaramond-MediumItalic';
+                font-weight: 300;
+            }
+        }
+}
