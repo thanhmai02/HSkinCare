@@ -2,32 +2,87 @@
     &--mains {
         background-color: #fcf8ef;
         padding-top: 100px;
-        &-four{
-            .img1{
-                position: absolute;
-            }
-            .img2{
-                margin-left: 13px;
-                margin-top: 20px;
-                max-width: 410px;
-                border-radius: 230px 230px 0 0;
-            }
-            .img3{
-                
+
+        &-four {
+            &-image{
+                position: relative;
+                .img1 {
+                    position: absolute;
+                }
+    
+                .img2 {
+                    margin-left: 13px;
+                    margin-top: 20px;
+                    max-width: 410px;
+                    border-radius: 230px 230px 0 0;
+                }
+    
+                .img3 {
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    right: -50px;
+                }
             }
         }
-        &-eight{
-            &--time{
+
+        &-eight {
+            &--time {
                 display: flex;
                 justify-content: space-evenly;
-                h2{
+
+                h2 {
                     font-family: 'Quicksand-Bold';
                     font-weight: 700;
                     font-size: 50px;
                 }
 
-                .minute{
-                    
+                .minute {}
+            }
+
+            &--product {
+                display: flex;
+                padding-top: 60px;
+
+                &-class {
+                    background-color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 15px;
+
+                    &-image {
+                        background-color: #fcf8ef;
+                        width: 110px;
+                        text-align: center;
+                    }
+
+                    &-information {
+                        h2 {
+                            font-size: 17px;
+                        }
+
+                        p {
+                            color: gray;
+                            font-size: 12px;
+                            text-decoration: line-through;
+                        }
+
+                        .free {
+                            display: flex;
+
+                            h3 {
+                                font-size: 17px;
+                            }
+
+                            p {
+                                text-decoration: none;
+                                color: red;
+                                border: 1px solid;
+                                margin-left: 15px;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
                 }
             }
         }

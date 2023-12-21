@@ -233,6 +233,9 @@
             min-height: 40px;
             border: none;
             border-radius: 25px; }
+            .collection-main--product-list-pro--img-oder .but:hover {
+              background-color: #555555;
+              color: white; }
 
 .title-head {
   text-align: center;
@@ -290,13 +293,20 @@
 .promotion-main--mains {
   background-color: #fcf8ef;
   padding-top: 100px; }
-  .promotion-main--mains-four .img1 {
-    position: absolute; }
-  .promotion-main--mains-four .img2 {
-    margin-left: 13px;
-    margin-top: 20px;
-    max-width: 410px;
-    border-radius: 230px 230px 0 0; }
+  .promotion-main--mains-four-image {
+    position: relative; }
+    .promotion-main--mains-four-image .img1 {
+      position: absolute; }
+    .promotion-main--mains-four-image .img2 {
+      margin-left: 13px;
+      margin-top: 20px;
+      max-width: 410px;
+      border-radius: 230px 230px 0 0; }
+    .promotion-main--mains-four-image .img3 {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: -50px; }
   .promotion-main--mains-eight--time {
     display: flex;
     justify-content: space-evenly; }
@@ -304,6 +314,34 @@
       font-family: 'Quicksand-Bold';
       font-weight: 700;
       font-size: 50px; }
+  .promotion-main--mains-eight--product {
+    display: flex;
+    padding-top: 60px; }
+    .promotion-main--mains-eight--product-class {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px; }
+      .promotion-main--mains-eight--product-class-image {
+        background-color: #fcf8ef;
+        width: 110px;
+        text-align: center; }
+      .promotion-main--mains-eight--product-class-information h2 {
+        font-size: 17px; }
+      .promotion-main--mains-eight--product-class-information p {
+        color: gray;
+        font-size: 12px;
+        text-decoration: line-through; }
+      .promotion-main--mains-eight--product-class-information .free {
+        display: flex; }
+        .promotion-main--mains-eight--product-class-information .free h3 {
+          font-size: 17px; }
+        .promotion-main--mains-eight--product-class-information .free p {
+          text-decoration: none;
+          color: red;
+          border: 1px solid;
+          margin-left: 15px;
+          border-radius: 4px; }
 
 .wrapImgResize {
   overflow: hidden;
