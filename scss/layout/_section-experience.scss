@@ -1,0 +1,35 @@
+.experience-main {
+    background-color: #fcf8ef;
+
+    &--introduce {
+        &-product {
+            &-item {
+                &-mains {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+
+                    .blog {
+                        margin-top: auto;
+                    }
+
+                    h3 {
+                        font-size: 19px;
+                        font-family: 'Quicksand-Bold';
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: #555555;
+                        font-size: 12.9px;
+                    }
+
+                    .experience-image {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

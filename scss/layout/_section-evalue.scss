@@ -1,40 +1,50 @@
 .evalue-main {
+    .swiper-slide{
+        height: unset;
+        align-self: normal;
+    }
+    .swiper-wrapper{
+        margin-bottom: 4px;
+    }
     &--product {
         padding-bottom: 90px;
-        &-row {
-            &-col {
-                
-                &-evalue {
-                    max-width: 600px;
-                    background-color: #fcf8ef;
-                    text-align: center;
-                    border-radius: 10px;
-                    box-shadow: 1px 2px 0 0 #CCCC;
+        &-row-col {
+            height: 100%;
+            align-self: normal;
+            &-evalue {
+                max-width: 600px;
+                background-color: #fcf8ef;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 1px 2px 0 0 #CCCC;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
 
-                    h2 {
-                        font-size: 20px;
-                        font-family: 'Quicksand-Bold';
-                        font-weight: 700;
-                    }
-                    p{
-                        font-size: 15px;
-                        color: #555555;
-                    }
-                    .star-evalue {
-                        display: flex;
-                        justify-content: center;
+                h2 {
+                    font-size: 20px;
+                    font-family: 'Quicksand-Bold';
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 15px;
+                    color: #555555;
+                }
+                .star-evalue {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: auto;
 
-                        &-image {}
+                    &-image {}
 
-                        &-name {
-                            &--number {
-                                display: flex;
-                                justify-content: center;
+                    &-name {
+                        &--number {
+                            display: flex;
+                            justify-content: center;
 
-                                &-item {
-                                    list-style: none;
-                                    margin-right: 5px;
-                                }
+                            &-item {
+                                list-style: none;
+                                margin-right: 5px;
                             }
                         }
                     }

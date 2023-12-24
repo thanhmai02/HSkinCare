@@ -1,14 +1,16 @@
 .section-head {
-    background-image: url(..//..//images/heroSlide/2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
 
     .header-bottom {
         height: 100vh;
         color: #ffffff;
         text-align: center;
+
+        .wrapHeroItem {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
 
         &--left {
             margin: 0 auto;
