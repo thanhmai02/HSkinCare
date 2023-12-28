@@ -49,13 +49,39 @@
 
 .but {
   background-color: #FFCC66;
-  min-width: 220px;
+  min-width: 170px;
   min-height: 40px;
   border: none;
   border-radius: 25px; }
   .but:hover {
     background-color: #555555;
     color: white; }
+
+.footer {
+  background-color: #fcf8ef; }
+  .footer-row {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between; }
+    .footer-row-colum h3 {
+      font-size: 18px;
+      font-family: 'Quicksand-Bold';
+      font-weight: 700; }
+    .footer-row-colum ul {
+      padding: 0; }
+      .footer-row-colum ul .item {
+        list-style: none; }
+        .footer-row-colum ul .item img {
+          max-width: 120px; }
+      .footer-row-colum ul a {
+        font-size: 13px;
+        color: #555555; }
+    .footer-row-colum .connect {
+      display: flex; }
+      .footer-row-colum .connect li {
+        margin-right: 20px; }
+        .footer-row-colum .connect li:last-child {
+          margin: 0; }
 
 .header {
   position: fixed;
@@ -264,7 +290,7 @@
           justify-content: space-between; }
           .collection-main--product-list-pro--img-oder .but {
             background-color: #FFCC66;
-            min-width: 220px;
+            min-width: 200px;
             min-height: 40px;
             border: none;
             border-radius: 25px; }
@@ -457,7 +483,8 @@
     min-width: 150px; }
   .subcribe-main--regist {
     text-align: center;
-    padding: 30px 0; }
+    padding: 30px 0;
+    border-bottom: 1px solid #DDDDDD; }
     .subcribe-main--regist h2 {
       font-size: 30px;
       font-family: 'Quicksand-Bold';

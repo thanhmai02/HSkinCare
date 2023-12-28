@@ -7,10 +7,10 @@ $(window).on('load', function () {
             effect: "fade",
             speed: 1e3,
             grabCursor: true,
-            // autoplay: {
-            //     delay: 5000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 //   el: ".swiper-pagination",
                 clickable: true,
