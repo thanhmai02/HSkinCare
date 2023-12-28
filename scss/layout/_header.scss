@@ -31,7 +31,12 @@
             }
         }
 
-        .logo {}
+        .logo {
+            img {
+                height: 70px;
+                transition: .5s;
+            }
+        }
 
         &--right {
             display: flex;
@@ -57,5 +62,9 @@
 .fixedMenu{
     .head {
         background-color: $color2;
+    }
+
+    .logo img {
+        height: 40px;
     }
 }

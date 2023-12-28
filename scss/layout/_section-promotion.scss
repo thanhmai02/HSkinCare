@@ -11,28 +11,34 @@
         &-four {
             &-image {
                 position: relative;
+                padding: 20px;
 
                 .img1 {
                     position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: -24px;
                 }
 
                 .img2 {
-                    margin-left: 13px;
-                    margin-top: 20px;
                     max-width: 410px;
                     border-radius: 230px 230px 0 0;
                 }
 
                 .img3 {
                     position: absolute;
-                    bottom: -10px;
+                    bottom: 0;
                     left: 0;
-                    right: -50px;
+                    right: -65px;
                 }
             }
         }
 
         &-eight {
+            .wrap-content {
+                padding-left: 50px;
+            }
+
             &--time {
                 display: flex;
                 justify-content: space-evenly;
