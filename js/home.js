@@ -7,10 +7,10 @@ $(window).on('load', function () {
             effect: "fade",
             speed: 1e3,
             grabCursor: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 5000,
+            //     disableOnInteraction: false,
+            // },
             pagination: {
                 //   el: ".swiper-pagination",
                 clickable: true,
@@ -176,6 +176,36 @@ if ($(".wrapPromotionSlide").length) {
         },
         768: {
           spaceBetween: 13,
+          slidesPerView: 2,
+        },
+      },
+    })
+  }
+
+  if ($(".wrapNewSlide").length) {
+    const slideItems = $(".wrapNewSlide .swiper-slide");
+  
+    new Swiper('.wrapNewSlide .swiper', {
+      loop: true,
+      speed: 1e3,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      grabCursor: true,
+      slidesPerView: 1,
+      spaceBetween: 15,
+      pagination: {
+        clickable: true,
+        el: `.wrapBlog .swiper-pagination`,
+      },
+      breakpoints: {
+        992: {
+          spaceBetween: 30,
+          slidesPerView: 3,
+        },
+        576: {
+          spaceBetween: 15,
           slidesPerView: 2,
         },
       },

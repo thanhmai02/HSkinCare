@@ -39,7 +39,7 @@
                         <li class="header-top--right-item"><a href="#">Đại lý</a><i class="fa fa-angle-down"
                                 style="font-size:15px; color: aliceblue; margin: 0 3px"></i></li>
                         <li class="header-top--right-item"><a href="#">Liên hệ</a></li>
-                        <li class="header-top--right-item"><a href="#"></a><i class="fa fa-envelope-o"
+                        <li class="header-top--right-item"><a href="#"></a><i class="fa fa-shopping-basket"
                                 style="font-size:24px; color: aliceblue;"></i></li>
                         <li class="header-top--right-item"><a href="#"></a><img src="./images/language/vi.jpg" alt="#">
                         </li>
@@ -48,7 +48,10 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="wrapHome">
+        <div class="bgSection" style="background-image: url(./images/background/1.png);">
+
+        </div>
         <section class="section-head">
             <div class="wrapHeroSlide">
                 <div class="swiper">
@@ -63,8 +66,8 @@
                                                 <img src="./images/logo/bough-logo.png" alt="#">
                                             </div>
                                             <h1>TỰ TIN TỎA SÁNG</h1>
-                                            <div class="but">
-                                                <button>Đặt Hàng Ngay</button>
+                                            <div class="but-center">
+                                                <button class="but">Đặt Hàng Ngay</button>
                                             </div>
                                         </div>
                                         <div class="header-bottom--right">
@@ -95,8 +98,8 @@
                                                 <img src="./images/logo/bough-logo.png" alt="#">
                                             </div>
                                             <h1>TỰ TIN TỎA SÁNG</h1>
-                                            <div class="but">
-                                                <button>Đặt Hàng Ngay</button>
+                                            <div class="but-center">
+                                                <button class="but">Đặt Hàng Ngay</button>
                                             </div>
                                         </div>
                                         <div class="header-bottom--right">
@@ -127,8 +130,8 @@
                                                 <img src="./images/logo/bough-logo.png" alt="#">
                                             </div>
                                             <h1>TỰ TIN TỎA SÁNG</h1>
-                                            <div class="but">
-                                                <button>Đặt Hàng Ngay</button>
+                                            <div class="but-center">
+                                                <button class="but">Đặt Hàng Ngay</button>
                                             </div>
                                         </div>
                                         <div class="header-bottom--right">
@@ -159,8 +162,8 @@
                                                 <img src="./images/logo/bough-logo.png" alt="#">
                                             </div>
                                             <h1>TỰ TIN TỎA SÁNG</h1>
-                                            <div class="but">
-                                                <button>Đặt Hàng Ngay</button>
+                                            <div class="but-center">
+                                                <button class="but">Đặt Hàng Ngay</button>
                                             </div>
                                         </div>
                                         <div class="header-bottom--right">
@@ -288,7 +291,7 @@
                                                     style="width:100%;cursor:pointer" onclick="onClick(this)"
                                                     class="w3-hover-opacity">
                                             </div>
-                                            <p>Sữa Rửa Mặt HSkin Care (750ml)</p>
+                                            <p>Kem Tẩy Tế Bào Chết (900ml)</p>
                                             <div class="collection-main--product-list-pro--img-cost">
                                                 <div class="collection-main--product-list-pro--img-cost-gia">
                                                     <p>900.000đ</p>
@@ -311,7 +314,7 @@
                                                     style="width:100%;cursor:pointer" onclick="onClick(this)"
                                                     class="w3-hover-opacity">
                                             </div>
-                                            <p>Sữa Rửa Mặt HSkin Care (750ml)</p>
+                                            <p>Kem Dưỡng Mắt</p>
                                             <div class="collection-main--product-list-pro--img-cost">
                                                 <div class="collection-main--product-list-pro--img-cost-gia">
                                                     <p>900.000đ</p>
@@ -334,7 +337,7 @@
                                                     style="width:100%;cursor:pointer" onclick="onClick(this)"
                                                     class="w3-hover-opacity">
                                             </div>
-                                            <p>Sữa Rửa Mặt HSkin Care (750ml)</p>
+                                            <p>Kem Dưỡng Chống Lão Hóas</p>
                                             <div class="collection-main--product-list-pro--img-cost">
                                                 <div class="collection-main--product-list-pro--img-cost-gia">
                                                     <p>900.000đ</p>
@@ -454,7 +457,7 @@
 
             </div>
         </section>
-        <section class="promotion-main" style="background-image: url(./images/background/1.png);">
+        <section class="promotion-main">
             <div class="promotion-main--mains">
                 <div class="container-xxl">
                     <div class="row">
@@ -518,7 +521,7 @@
                                                         <img src="./images/product/6.png" alt="#">
                                                     </div>
                                                     <div class="promotion-main--mains-eight--product-class-information">
-                                                        <h2>Dưỡng Ẩm Da (350ml)</h2>
+                                                        <h2>Sữa Rửa Mặt HSkin Care (350ml)</h2>
                                                         <p>900.000đ</p>
                                                         <div class="free">
                                                             <h3>700.000đ</h3>
@@ -672,64 +675,71 @@
         </section>
         <section class="experience-main">
             <div class="container-xxl">
-                <div class="experience-main--collect title-head">
-                    <div class="experience-main--collect-title title-main">
-                        <img src="./images/vector/leaf.svg" alt="#">
-                        <h2>Kinh Nghiệm Làm Đẹp</h2>
+                <div class="blog-edit">
+                    <div class="experience-main--collect title-head">
+                        <div class="experience-main--collect-title title-main">
+                            <img src="./images/vector/leaf.svg" alt="#">
+                            <h2>Kinh Nghiệm Làm Đẹp</h2>
+                        </div>
+                        <p>ĐẸP MỖI NGÀY</p>
                     </div>
-                    <p>ĐẸP MỖI NGÀY</p>
-                </div>
-                <div class="experience-main--introduce">
-                    <div class="wrapBlogSlide">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class=" experience-main--introduce-product-item">
-                                        <div class="experience-main--introduce-product-item-mains">
-                                            <img class="experience-image" src="./images/blog/1.jpg" alt="#">
-                                            <div class="blog">
-                                                <h3>Cách Làm Đẹp Da Bằng Tổ Yến Ít Ai Biết</h3>
-                                                <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất
-                                                    xơ và
-                                                    18 loại
-                                                    axit amin khác. Ngoài các tác dụng tăng cường sức khỏe, tổ yến còn
-                                                    có
-                                                    tác dụng
-                                                    đặc
-                                                    biệt trong việc chăm sóc da ...</p>
+                    <div class="experience-main--introduce">
+                        <div class="wrapBlogSlide">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class=" experience-main--introduce-product-item">
+                                            <div class="experience-main--introduce-product-item-mains">
+                                                <img class="experience-image" src="./images/blog/1.jpg" alt="#">
+                                                <div class="blog">
+                                                    <h3>Cách Làm Đẹp Da Bằng Tổ Yến Ít Ai Biết</h3>
+                                                    <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng,
+                                                        chất
+                                                        xơ và
+                                                        18 loại
+                                                        axit amin khác. Ngoài các tác dụng tăng cường sức khỏe, tổ yến
+                                                        còn
+                                                        có
+                                                        tác dụng
+                                                        đặc
+                                                        biệt trong việc chăm sóc da ...</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class=" experience-main--introduce-product-item">
-                                        <div class="experience-main--introduce-product-item-mains">
-                                            <img class="experience-image" src="./images/blog/2.jpg" alt="#">
-                                            <div class="blog">
-                                                <h3>Mặt Nạ Yến Sào: Giải Pháp Làm Đẹp, Trẻ Hóa Làn Da</h3>
-                                                <p>Bên cạnh công dụng bồi bổ sức khỏe, yến sào còn được biết đến là một
-                                                    loại
-                                                    nguyên
-                                                    liệu làm đẹp và chăm sóc da tuyệt vời cho chị em phụ nữ. Sau đây hãy
-                                                    cùng HSkin
-                                                    Care khám phá ngay cách làm đẹp ...</p>
+                                    <div class="swiper-slide">
+                                        <div class=" experience-main--introduce-product-item">
+                                            <div class="experience-main--introduce-product-item-mains">
+                                                <img class="experience-image" src="./images/blog/2.jpg" alt="#">
+                                                <div class="blog">
+                                                    <h3>Mặt Nạ Yến Sào: Giải Pháp Làm Đẹp, Trẻ Hóa Làn Da</h3>
+                                                    <p>Bên cạnh công dụng bồi bổ sức khỏe, yến sào còn được biết đến là
+                                                        một
+                                                        loại
+                                                        nguyên
+                                                        liệu làm đẹp và chăm sóc da tuyệt vời cho chị em phụ nữ. Sau đây
+                                                        hãy
+                                                        cùng HSkin
+                                                        Care khám phá ngay cách làm đẹp ...</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class=" experience-main--introduce-product-item">
-                                        <div class="experience-main--introduce-product-item-mains">
-                                            <img class="experience-image" src="./images/blog/3.jpg" alt="#">
-                                            <div class="blog">
-                                                <h3>Công Dụng Của Yến Sào Đối Với Làn Da Bạn Nên Biết</h3>
-                                                <p>Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối
-                                                    với
-                                                    sức khỏe
-                                                    và sắc đẹp. Tuy nhiên, có nhiều chị em vẫn thường thắc liệu uống
-                                                    nước
-                                                    yến có đẹp
-                                                    da không? Hãy cùng HSkin Care ...</p>
+                                    <div class="swiper-slide">
+                                        <div class=" experience-main--introduce-product-item">
+                                            <div class="experience-main--introduce-product-item-mains">
+                                                <img class="experience-image" src="./images/blog/3.jpg" alt="#">
+                                                <div class="blog">
+                                                    <h3>Công Dụng Của Yến Sào Đối Với Làn Da Bạn Nên Biết</h3>
+                                                    <p>Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng
+                                                        đối
+                                                        với
+                                                        sức khỏe
+                                                        và sắc đẹp. Tuy nhiên, có nhiều chị em vẫn thường thắc liệu uống
+                                                        nước
+                                                        yến có đẹp
+                                                        da không? Hãy cùng HSkin Care ...</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -737,21 +747,114 @@
                             </div>
                         </div>
                     </div>
+                    <button class="but">Xem Tất Cả</button>
                 </div>
             </div>
         </section>
         <section class="news-main">
             <div class="container-xxl">
-                <div class="news-main--collect title-head">
-                    <div class="news-main--collect-title title-main">
-                        <img src="./images/vector/leaf.svg" alt="#">
-                        <h2>Tin Tức</h2>
+                <div class="blog-edit">
+                    <div class="news-main--collect title-head">
+                        <div class="news-main--collect-title title-main">
+                            <img src="./images/vector/leaf.svg" alt="#">
+                            <h2>Tin Tức</h2>
+                        </div>
+                        <p>CẬP NHẬT MỚI NHẤT</p>
                     </div>
-                    <p>CẬP NHẬT MỚI NHẤT</p>
+                    <div class="news-main--blog">
+                        <div class="wrapNewSlide">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class=" experience-main--introduce-product-item">
+                                            <div class="experience-main--introduce-product-item-mains">
+                                                <img class="experience-image" src="./images/news/1.jpg" alt="#">
+                                                <div class="blog">
+                                                    <h3>Serum Dưỡng Da Tinh Chất Từ Yến Đầu Tiên Ở Việt Nam</h3>
+                                                    <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng,
+                                                        chất
+                                                        xơ và
+                                                        18 loại
+                                                        axit amin khác. Ngoài các tác dụng tăng cường sức khỏe, tổ yến
+                                                        còn
+                                                        có
+                                                        tác dụng
+                                                        đặc
+                                                        biệt trong việc chăm sóc da ...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class=" experience-main--introduce-product-item">
+                                            <div class="experience-main--introduce-product-item-mains">
+                                                <img class="experience-image" src="./images/news/2.jpg" alt="#">
+                                                <div class="blog">
+                                                    <h3>HSkin Care Đã Có Mặt Tại Thành Phố Nha Trang</h3>
+                                                    <p>Bên cạnh công dụng bồi bổ sức khỏe, yến sào còn được biết đến là
+                                                        một
+                                                        loại
+                                                        nguyên
+                                                        liệu làm đẹp và chăm sóc da tuyệt vời cho chị em phụ nữ. Sau đây
+                                                        hãy
+                                                        cùng HSkin
+                                                        Care khám phá ngay cách làm đẹp ...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class=" experience-main--introduce-product-item">
+                                            <div class="experience-main--introduce-product-item-mains">
+                                                <img class="experience-image" src="./images/news/3.jpg" alt="#">
+                                                <div class="blog">
+                                                    <h3>Những Món Quà Ý Nghĩa Cho Các Dịp Lễ Tết</h3>
+                                                    <p>Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng
+                                                        đối
+                                                        với
+                                                        sức khỏe
+                                                        và sắc đẹp. Tuy nhiên, có nhiều chị em vẫn thường thắc liệu uống
+                                                        nước
+                                                        yến có đẹp
+                                                        da không? Hãy cùng HSkin Care ...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="but">Xem Tất Cả</button>
+                </div>
+            </div>
+        </section>
+        <section class="subcribe-main">
+            <div class="container-xxl">
+                <div class="subcribe-main--regist">
+                    <h2>Đăng Ký Để Nhận Ưu Đãi Độc Quyền</h2>
+                    <div class="subcribe-main--regist-write">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="Nhập Email của bạn" size="35">
+                            <input type="tel" id="phone" name="phone" placeholder="Số điện thoại"
+                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" size="35">
+                        </form>
+                        <button class="but">Đăng Ký</button>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </footer>
     <script src="./js/lib.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/home.js"></script>

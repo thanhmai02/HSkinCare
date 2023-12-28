@@ -21,21 +21,23 @@
             top: 50%;
             transform: translate(-50%, -50%);
 
+            .but-center{
+                text-align: center;
+                margin-top: 20px;
+            }
+
             .logo_la {
                 display: flex;
 
                 p {
-                    font-size: 30px;
+                    font-size: 40px;
                     font-family: 'CormorantGaramond-MediumItalic';
                     font-weight: 300;
                 }
 
                 img {
-                    padding-bottom: 10px;
-                    width: 80px;
-                    height: 50px;
-                    padding-top: 15px;
-                    margin-left: 18px
+                    height: 30px;
+                    margin-left: 18px;
                 }
             }
 

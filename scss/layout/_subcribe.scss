@@ -1,0 +1,31 @@
+.subcribe-main {
+    background-color: #fcf8ef;
+    .but {
+        min-width: 150px;
+    }
+
+    &--regist {
+        text-align: center;
+        padding: 30px 0;
+        h2 {
+            font-size: 30px;
+            font-family: 'Quicksand-Bold';
+            font-weight: 700;
+
+        }
+
+        &-write {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+
+            input {
+                border: 1px solid #FFCC00;
+                min-height: 45px;
+                border-radius: 50px;
+                margin-right: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}

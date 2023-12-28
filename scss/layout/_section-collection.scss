@@ -57,6 +57,7 @@
                             color: gray;
                             font-size: 12px;
                             text-decoration: line-through;
+                            margin: 0;
                         }
 
                         h3 {
@@ -66,6 +67,7 @@
 
                         &-gia {
                             display: flex;
+                            margin-bottom: 10px;
                         }
                     }
 

@@ -1,13 +1,12 @@
 .second-main {
-    background-image: url(..//..//images/background/1.png);
-    min-height: 550px;
-    background-repeat: no-repeat;
 
     &--row {
         padding-top: 90px;
-        &-col1{
+
+        &-col1 {
             text-align: right;
         }
+
         .col-6 {
             img {
                 max-width: 450px;
@@ -19,10 +18,11 @@
                 font-weight: 300;
             }
 
-            p{
+            p {
                 max-width: 550px;
                 color: #555555;
             }
+
             .second-main--h1 {
                 max-width: 390px;
 
@@ -50,8 +50,8 @@
         border-radius: 73px;
         margin: 16px -3px;
         margin-right: 50px;
-        
-        &:hover{
+
+        &:hover {
             background-color: gray;
         }
     }
@@ -63,7 +63,7 @@
         border-radius: 73px;
         margin: 16px -3px;
 
-        &:hover{
+        &:hover {
             background-color: #FFCC66;
         }
     }
