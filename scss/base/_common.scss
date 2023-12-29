@@ -1,5 +1,6 @@
 .container-xxl {
     max-width: 1368px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     padding: 0 15px;
@@ -16,7 +17,7 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 
     ~ * {
@@ -27,45 +28,22 @@
 .but {
     background-color: #FFCC66;
     min-width: 170px;
-    min-height: 50px;
+    height: 50px;
     border: none;
     border-radius: 25px;
+
+    @include downXxl {
+        height: 46px;
+        font-size: 16px;
+      }
+    
+      @include downMd {
+        height: 38px;
+        font-size: 14px;
+      }
 
     &:hover{
         background-color: #555555;
         color: white;
     }
 }
-
-/* =============================
-    BACKGROUND SECTION
-============================= */
-.wrapHome .bgSection::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #F3EDDD;
-    opacity: 0.5;
-  }
-  
-  /* =============================
-      ULTILITIES SECTION
-  ============================= */
-  .first-main--row .col-3 img {
-      max-width: 100px;
-  }
-  
-  /* =============================
-      ABOUT SECTION
-  ============================= */
-  .wrapHome .about-section .second-main--h1 {
-      max-width: unset;
-  }
-  
-  .wrapHome .about-section .second-main--h1 .title-main {
-      font-size: 58px;
-      font-weight: 700;
-  }

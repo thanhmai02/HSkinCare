@@ -14,134 +14,38 @@
 
 
 /* ============== || Swiper Custom || ============== */
-// .wrapSwiperControl1 {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .wrapSwiperControl1 .swiperBtn {
-//     $btnSize: 46px;
-
-//     position: absolute;
-//     top: 50%;
-//     @include translateY(-50%);
-//     width: $btnSize;
-//     height: $btnSize;
-//     @include borderRadius(4px);
-//     background-color: transparent;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     z-index: 1;
-//     @include transition(.3s);
-//     color: $color3;
-
-//     @include downSm {
-//         display: none;
-//     }
-
-//     &.swiperBtnPrev {
-//         left: -$btnSize;
-//     }
-
-//     &.swiperBtnNext {
-//         right: -$btnSize;
-//     }
-
-//     svg {
-//         height: 24px;
-//     }
+.wrapSwiperControl1 .swiper-pagination {
+    position: unset;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 
 
-//     @media (min-width: 992px) {
-//         &:hover {
-//             background-color: $color5;
-//         }
-//     }
+    .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+        background: transparent;
+        opacity: 1;
+        margin: 0 10px;
+        border-radius: 10px;
+        transition: .5s;
+        border: 2px solid $color14;
 
-//     @media (max-width: 1740px) {
-//         display: none;
-//     }
+        &:hover {
+            background-color: $color29;
+            transform: scale(1.2);
+        }
+    }
 
-//     @media (max-width: 1400px) {
-//         width: 40px;
-//         height: 40px;
+    .swiper-pagination-bullet-active {
+        background-color: $color3 !important;
+        border-color: $color3;
+    }
 
-//         svg {
-//             height: 18px;
-//         }
-//     }
+    @media (max-width: 575px) {
+        .swiper-pagination-bullet {
+            margin: 0 7.5px;
+        }
+    }
+}
 
-//     @media (max-width: 575px) {
-//         background-color: transparent;
-//         width: 25px;
-
-//         &.swiperBtnPrev {
-//             left: 0;
-//             border-radius: 0 50% 50% 0;
-//         }
-
-//         &.swiperBtnNext {
-//             right: 0;
-//             border-radius: 50% 0 0 50%;
-//         }
-//     }
-// }
-
-// .wrapSwiperControl1 .swiper-pagination {
-//     position: unset;
-//     width: auto;
-//     margin-left: 10px;
-//     margin-right: 10px;
-
-
-//     .swiper-pagination-bullet {
-//         width: 16px;
-//         height: 16px;
-//         background: transparent;
-//         opacity: 1;
-//         margin: 0 10px;
-//         @include borderRadius(10px);
-//         @include transition(.5s);
-//         border: 2px solid $color14;
-
-//         &:hover {
-//             background-color: $color29;
-//             transform: scale(1.2);
-//         }
-//     }
-
-//     .swiper-pagination-bullet-active {
-//         background-color: $color3 !important;
-//         border-color: $color3;
-//     }
-
-//     @media (max-width: 575px) {
-//         .swiper-pagination-bullet {
-//             margin: 0 7.5px;
-//         }
-//     }
-// }
-
-// .swiperStyle1 {
-//     .wrapSwiperControl1 .swiperBtn {
-//         @include translateY(calc(-50% - 24px));
-//     }
-
-//     @media (min-width: 1221px) {
-//         .wrapSwiperControl1 .swiperBtn {
-//             @include translateY(calc(-50% - 48px));
-
-//         }
-//     }
-
-// }
-
-// /* ============== || Swiper List || ============== */
-// .wrapSlideList {
-//     .swiper-slide  {
-//         align-self: normal;
-//         height: unset;
-//     }
-// }

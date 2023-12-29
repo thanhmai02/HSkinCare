@@ -1,0 +1,152 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.formContent {
+    margin-top: 30px;
+    $heightInputItem: 54px;
+
+    .lblItem {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $color2;
+        margin: 0 0 5px 0;
+        text-transform: capitalize;
+    }
+
+    .inputGroupItem {
+        position: relative;
+        border: 1px solid $color4;
+        border-radius: 10px;
+        overflow: hidden;
+
+        &.invalid {
+            border-color: $color11;
+
+            .iconItem {
+                color: $color11;
+            }
+        }
+    }
+
+    .iconItem {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        font-size: 16px;
+        color: $color4;
+        width: 20px;
+        text-align: center;
+        transform: translate(0, -50%);
+        z-index: 10;
+        text-align: center;
+
+        svg {
+            height: $heightInputItem;
+            width: 17px;
+            height: 17px;
+            display: inline-block;
+        }
+    }
+
+    .inputItem {
+        font-size: 16px;
+        line-height: $heightInputItem;
+        height: $heightInputItem;
+        padding: 0 20px 0 45px;
+        border: none;
+        width: 100%;
+        color: $color2;
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        transition: .5s;
+
+        @include downXxl {
+            height: 46px;
+        }
+
+        @include downMd {
+            height: 38px;
+        }
+
+        &:hover {
+            background-color: #fffcf5;
+            box-shadow: $boxShadow1;
+        }
+
+        &:focus {
+            background-color: transparent;
+            box-shadow: none;
+
+        }
+
+    }
+
+    .inputSearch {
+        position: relative;
+
+        input {
+            padding-right: 32px;
+        }
+
+        .btn-clear {
+            position: absolute;
+            z-index: 10;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $color4;
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-clear svg {
+            width: 12px;
+            color: $color1;
+        }
+    }
+
+    textarea {
+        &.inputItem {
+            border-radius: 10px;
+            padding: 10px 15px;
+            line-height: 26px;
+            height: unset;
+            display: block;
+            border: 1px solid $color4;
+        }
+
+        &.invalid {
+            border-color: $color11;
+        }
+    }
+
+    .msgText {
+        font-size: 12px;
+        margin-top: 5px;
+        padding-left: 2px;
+    }
+
+    @media (min-width: 576px) {
+        .msgText {
+            margin-top: 0;
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 2px;
+        }
+    }
+}
