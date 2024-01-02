@@ -5,22 +5,24 @@
 
     &--mains {
         background-color: #fcf8ef;
-        padding-top: 100px;
         padding-bottom: 20px;
+        margin-top: 90px;
 
         &-four {
             &-image {
                 position: relative;
                 padding: 20px;
+                margin-top: -60px;
 
                 .img1 {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    right: -24px;
+                    right: 0;
                 }
 
                 .img2 {
+                    width: 100%;
                     max-width: 410px;
                     border-radius: 230px 230px 0 0;
                 }
@@ -29,27 +31,53 @@
                     position: absolute;
                     bottom: 0;
                     left: 0;
-                    right: -65px;
+                    right: -40px;
                 }
             }
         }
 
         &-eight {
             .wrap-content {
-                padding-left: 50px;
+
+                @include upXl {
+                    padding-left: 35px;
+                }
             }
 
             &--time {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
+
+                .text-item {
+                    padding: 0 40px;
+                    position: relative;
+                    text-align: center;
+
+                    &:not(:last-child)::before {
+                        content: "";
+                        position: absolute;
+                        top: 55%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        height: 70%;
+                        border-left: 1px solid $color23;
+                    }
+                }
 
                 h2 {
                     font-family: 'Quicksand-Bold';
                     font-weight: 700;
                     font-size: 50px;
+                    
+                    @include downMd {
+                        font-size: 38px;
+                    }
                 }
 
-                .minute {}
+                p {
+                    margin: 0;
+                }
+
             }
 
             &--product {

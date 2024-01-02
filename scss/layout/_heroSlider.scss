@@ -1,52 +1,123 @@
 .section-head {
+    @include downLg {
+        margin-top: 70px;
+    }
+
+    @include downSm {
+        margin-top: 66px;
+    }
+
+    .wrapHeroItem {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        position: relative;
+
+        @include downLg {
+            min-height: auto;
+            padding-top: 56.25%;
+            overflow: hidden;
+            .container-xxl {
+                position: unset;
+            }
+            
+            .header-bottom {
+                height: unset;
+            }
+        }
+
+    }
 
     .header-bottom {
         height: 100vh;
         color: #ffffff;
         text-align: center;
 
-        .wrapHeroItem {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
         &--left {
-            margin: 0 auto;
-            max-width: 600px;
             text-align: left;
             position: absolute;
+            width: 100%;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
 
-            .but-center{
+            .but-center {
                 text-align: center;
                 margin-top: 20px;
             }
 
             .logo_la {
                 display: flex;
+                align-items: center;
 
                 p {
                     font-size: 40px;
                     font-family: 'CormorantGaramond-MediumItalic';
                     font-weight: 300;
+
+                    @include downXxl {
+                        font-size: 36px;
+                    }
+
+                    @include downLg {
+                        font-size: 22px;
+                    }
+
+                    @include downMd {
+                        font-size: 16px;
+                    }
+
+                    @include downSm {
+                        margin-right: 8px;
+                    }
                 }
 
                 img {
-                    height: 30px;
+                    width: 100px;
                     margin-left: 18px;
+                    position: relative;
+                    top: -14px;
+
+                    @include downLg {
+                        width: 76px;
+                    }
+
+                    @include downMd {
+                        width: 58px;
+                    }
+
+                    @include downSm {
+                        width: 50px;
+                    }
                 }
             }
 
             h1 {
-                font-size: 55px;
+                font-size: 64px;
                 font-family: 'Quicksand-Bold';
                 font-weight: 700;
                 margin: 0;
                 letter-spacing: 8px;
+
+                @include downXxl {
+                    font-size: 50px;
+                }
+
+                @include downLg {
+                    font-size: 32px;
+                    margin-bottom: 15px;
+                }
+
+                @include downSm {
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                    white-space: unset;
+                    -webkit-line-clamp: 2;
+                }
+
+                @include downXs {
+                    letter-spacing: 4px;
+                }
             }
 
             .but {
@@ -55,7 +126,7 @@
                 button {
                     background-color: #FFCC66;
                     min-width: 141.9px;
-                    min-height: 50px;
+                    height: 50px;
                     border: none;
                     border-radius: 73px;
                     margin: 16px -3px;
@@ -74,5 +145,28 @@
                 list-style: none;
             }
         }
+    }
+
+    .swiper-slide-active {
+        .header-bottom--left .logo_la img {
+            animation: animation-la 4s linear infinite;
+        }
+    }
+}
+
+@keyframes animation-la {
+    0% {
+        -webkit-transform: translateY(0px) translateX(0px) rotate(0deg);
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(10px) translateX(10px) rotate(5deg);
+        transform: translateY(10px) translateX(10px) rotate(5deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px) translateX(0px) rotate(0deg);
+        transform: translateY(0px) translateX(0px) rotate(0deg);
     }
 }

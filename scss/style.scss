@@ -4,12 +4,25 @@
 @import "abstracts/mixins";
 @import "abstracts/breakpoint";
 
+//Vendors
+@import "vendors/bootstrap";
+@import "vendors/jquery-ui";
+@import "vendors/swiper";
+@import "vendors/animated";
+
 //Base
 @import "base/reset";
 @import "base/typography";
 @import "base/font";
 @import "base/common";
 
+//===Component===
+@import "components/buttons";
+@import "components/carousel";
+@import "components/popup";
+@import "components/slider";
+@import "components/image";
+@import "components/form";
 
 //Layout
 @import "layout/footer";
@@ -28,20 +41,12 @@
 @import "layout/section-experience";
 @import "layout/section-news";
 @import "layout/subcribe";
+@import "layout/btnScrollTop";
 
 //Themes
 @import "themes/theme";
 
-//Vendors
-@import "vendors/bootstrap";
-@import "vendors/jquery-ui";
-@import "vendors/swiper";
-
 //===Pages===
 
-//===Component===
-@import "components/buttons";
-@import "components/carousel";
-@import "components/popup";
-@import "components/slider";
-@import "components/image";
+
+@import "layout/custom";

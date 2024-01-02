@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href=".//scss/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
@@ -11,7 +12,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="">
     <link rel='shortcut icon' href='./images/background/about-1.png' />
     <title>SkinCare</title>
@@ -23,31 +23,102 @@
             <div class="container-xxl">
                 <div class="header-top">
                     <ul class="header-top--left">
-                        <li class="header-top--left-item"><a href="#"></a><i class="fa fa-envelope-open-o"
-                                style="font-size:24px; color: aliceblue;"></i></li>
+                        <div class="wrapBtnCtrMenuHeader">
+                            <div class="btnCtrMenu">
+                                <svg class="iconOpen" aria-hidden="true" focusable="false" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
+                                    </path>
+                                </svg>
+
+                                <svg class="iconClose" aria-hidden="true" focusable="false" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512">
+                                    <path fill="currentColor"
+                                        d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <li class="header-top--left-item"><a href="#"><svg width="24" height="27" viewBox="0 0 24 27"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.404 1.40334C10.8541 1.03461 11.4181 0.83313 12 0.83313C12.5819 0.83313 13.1458 1.03461 13.596 1.40334L22.3793 8.56468C22.6782 8.80971 22.9188 9.11812 23.0838 9.4676C23.2488 9.81708 23.334 10.1989 23.3333 10.5853V23.5753C23.3333 25.0067 22.192 26.1667 20.7833 26.1667H17.2166C15.808 26.1667 14.6666 25.0067 14.6666 23.5753V17.4247C14.6666 16.9473 14.2866 16.5607 13.8166 16.5607H10.1833C9.71396 16.5607 9.3333 16.9473 9.3333 17.4247V23.5753C9.3333 25.0067 8.19196 26.1667 6.7833 26.1667H3.21663C1.80863 26.1667 0.666631 25.0067 0.666631 23.5753V10.5853C0.665908 10.1989 0.75113 9.81708 0.916126 9.4676C1.08112 9.11812 1.32176 8.80971 1.62063 8.56468L10.404 1.40334ZM12.532 2.75068C12.3819 2.62785 12.1939 2.56074 12 2.56074C11.806 2.56074 11.6181 2.62785 11.468 2.75068L2.68463 9.91135C2.58497 9.99309 2.50474 10.096 2.44974 10.2125C2.39474 10.3291 2.36636 10.4565 2.36663 10.5853V23.5753C2.36663 24.0527 2.74663 24.4393 3.21663 24.4393H6.7833C7.25263 24.4393 7.6333 24.0527 7.6333 23.5753V17.4247C7.6333 15.9933 8.7753 14.8333 10.1833 14.8333H13.8166C15.2246 14.8333 16.3666 15.9933 16.3666 17.4247V23.5753C16.3666 24.0527 16.7466 24.4393 17.2166 24.4393H20.7833C21.2526 24.4393 21.6333 24.0527 21.6333 23.5753V10.5853C21.6337 10.4565 21.6053 10.3293 21.5503 10.2128C21.4953 10.0963 21.415 9.99356 21.3153 9.91201L12.532 2.75068Z"
+                                        fill="currentColor" stroke="currentColor" />
+                                </svg></a></li>
                         <li class="header-top--left-item"><a href="#">Sản phẩm</a><i class="fa fa-angle-down"
-                                style="font-size:15px; color: aliceblue; margin: 0 3px;"></i></li>
+                                style="font-size:15px; margin: 0 3px;"></i></li>
                         <li class="header-top--left-item"><a href="#">Giới thiệu</a></li>
                         <li class="header-top--left-item"><a href="#">Khuyến mãi <i class="fa fa-angle-down"
-                                    style="font-size:15px; color: aliceblue; margin: 0 3px"></i></a>
+                                    style="font-size:15px; margin: 0 3px"></i></a>
                         </li>
                     </ul>
                     <div class="logo"><img src="./images/logo/logo.png" alt="#"></div>
                     <ul class="header-top--right">
                         <li class="header-top--right-item"><a href="#">Tin tức</a><i class="fa fa-angle-down"
-                                style="font-size:15px; color: aliceblue; margin: 0 3px"></i></li>
+                                style="font-size:15px; margin: 0 3px"></i></li>
                         <li class="header-top--right-item"><a href="#">Đại lý</a><i class="fa fa-angle-down"
-                                style="font-size:15px; color: aliceblue; margin: 0 3px"></i></li>
+                                style="font-size:15px; margin: 0 3px"></i></li>
                         <li class="header-top--right-item"><a href="#">Liên hệ</a></li>
-                        <li class="header-top--right-item"><a href="#"></a><i class="fa fa-shopping-basket"
-                                style="font-size:24px; color: aliceblue;"></i></li>
-                        <li class="header-top--right-item"><a href="#"></a><img src="./images/language/vi.jpg" alt="#">
+                        <li class="header-top--right-item wrap-cart-header">
+                            <div class="">
+                                <i class="fa fa-shopping-basket" style="font-size:24px;"></i>
+                                <div class="text-qtt">1</div>
+                            </div>
+                        </li>
+                        <li class="header-top--right-item header-language">
+                            <div class="language-content">
+                                <div class="language-btn"><img src="images/language/vi.jpg" alt="Việt Nam">
+                                    <div class="dropdown-btn">
+                                        <i class="fa fa-angle-down" style="font-size:15px;"></i>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-languge">
+                                    <div class="content-list">
+                                        <a href="javascript:void(0);" title="Việt Nam"><img src="images/language/vi.jpg"
+                                                alt="Việt Nam"></a>
+                                        <a href="javascript:void(0);" title="English"><img src="images/language/en.jpg"
+                                                alt="English"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <nav class="wrap-menu-mobile">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a class="link-item" href="#">Trang chủ</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Sản phẩm</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Giới thiệu</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Khuyến mãi</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Tin tức</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Đại lý</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="wrap-bg-menu-mobile"></div>
     </header>
+
+
     <main class="wrapHome">
         <div class="bgSection" style="background-image: url(./images/background/1.png);">
 
@@ -61,29 +132,17 @@
                                 <div class="container-xxl">
                                     <div class="header-bottom">
                                         <div class="header-bottom--left">
-                                            <div class="logo_la">
-                                                <p>Thành Phần Tự Nhiên</p>
-                                                <img src="./images/logo/bough-logo.png" alt="#">
-                                            </div>
-                                            <h1>TỰ TIN TỎA SÁNG</h1>
-                                            <div class="but-center">
-                                                <button class="but">Đặt Hàng Ngay</button>
+                                            <div class="wrap-content">
+                                                <div class="logo_la">
+                                                    <p>Thành Phần Tự Nhiên</p>
+                                                    <img src="./images/logo/bough-logo.png" alt="#">
+                                                </div>
+                                                <h1>TỰ TIN TỎA SÁNG</h1>
+                                                <div class="but-center">
+                                                    <button class="but">Đặt Hàng Ngay</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="header-bottom--right">
-                                            <ul>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                            </ul>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -93,29 +152,17 @@
                                 <div class="container-xxl">
                                     <div class="header-bottom">
                                         <div class="header-bottom--left">
-                                            <div class="logo_la">
-                                                <p>Thành Phần Tự Nhiên</p>
-                                                <img src="./images/logo/bough-logo.png" alt="#">
-                                            </div>
-                                            <h1>TỰ TIN TỎA SÁNG</h1>
-                                            <div class="but-center">
-                                                <button class="but">Đặt Hàng Ngay</button>
+                                            <div class="wrap-content">
+                                                <div class="logo_la">
+                                                    <p>Thành Phần Tự Nhiên</p>
+                                                    <img src="./images/logo/bough-logo.png" alt="#">
+                                                </div>
+                                                <h1>TỰ TIN TỎA SÁNG</h1>
+                                                <div class="but-center">
+                                                    <button class="but">Đặt Hàng Ngay</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="header-bottom--right">
-                                            <ul>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                            </ul>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -125,29 +172,17 @@
                                 <div class="container-xxl">
                                     <div class="header-bottom">
                                         <div class="header-bottom--left">
-                                            <div class="logo_la">
-                                                <p>Thành Phần Tự Nhiên</p>
-                                                <img src="./images/logo/bough-logo.png" alt="#">
-                                            </div>
-                                            <h1>TỰ TIN TỎA SÁNG</h1>
-                                            <div class="but-center">
-                                                <button class="but">Đặt Hàng Ngay</button>
+                                            <div class="wrap-content">
+                                                <div class="logo_la">
+                                                    <p>Thành Phần Tự Nhiên</p>
+                                                    <img src="./images/logo/bough-logo.png" alt="#">
+                                                </div>
+                                                <h1>TỰ TIN TỎA SÁNG</h1>
+                                                <div class="but-center">
+                                                    <button class="but">Đặt Hàng Ngay</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="header-bottom--right">
-                                            <ul>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                            </ul>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -157,72 +192,64 @@
                                 <div class="container-xxl">
                                     <div class="header-bottom">
                                         <div class="header-bottom--left">
-                                            <div class="logo_la">
-                                                <p>Thành Phần Tự Nhiên</p>
-                                                <img src="./images/logo/bough-logo.png" alt="#">
-                                            </div>
-                                            <h1>TỰ TIN TỎA SÁNG</h1>
-                                            <div class="but-center">
-                                                <button class="but">Đặt Hàng Ngay</button>
+                                            <div class="wrap-content">
+                                                <div class="logo_la">
+                                                    <p>Thành Phần Tự Nhiên</p>
+                                                    <img src="./images/logo/bough-logo.png" alt="#">
+                                                </div>
+                                                <h1>TỰ TIN TỎA SÁNG</h1>
+                                                <div class="but-center">
+                                                    <button class="but">Đặt Hàng Ngay</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="header-bottom--right">
-                                            <ul>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                                <li class="header-bottom--right-item"><i class="fa fa-circle-thin"
-                                                        style="font-size:24px; color: aliceblue;"></i></li>
-                                            </ul>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="wrap-pagination container-xxl">
+                        <div class="swiper-pagination customPagination"></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="first-main">
+        <section class="first-main wrap-utilities">
             <div class="container-xxl">
                 <div class="row first-main--row">
-                    <div class="col-3 first-main--row-col1">
+                    <div class="col-6 col-xl-3 col-item first-main--row-col1 wow fadeFromLeft" data-wow-duration="1s" data-wow-delay="0s">
                         <img src="./images/Icons-svg/utilities/1.svg" alt="#">
-                        <h2>Thành Phần Tự Nhiên</h2>
-                        <p>Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
+                        <h2 class="title-item">Thành Phần Tự Nhiên</h2>
+                        <p class="text-item">Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
                     </div>
 
-                    <div class="col-3 first-main--row-col2">
+                    <div class="col-6 col-xl-3 col-item first-main--row-col2 wow fadeFromLeft" data-wow-duration="1s" data-wow-delay="0.3s">
                         <img src="./images/Icons-svg/utilities/2.svg" alt="#">
-                        <h2>Độ PH Trung Tính</h2>
-                        <p>Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
+                        <h2 class="title-item">Độ PH Trung Tính</h2>
+                        <p class="text-item">Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
                     </div>
-                    <div class="col-3 first-main--row-col3">
+                    <div class="col-6 col-xl-3 col-item first-main--row-col3 wow fadeFromLeft" data-wow-duration="1s" data-wow-delay="0.6s">
                         <img src="./images/Icons-svg/utilities/3.svg" alt="#">
-                        <h2>Bảo Vệ Môi Trường</h2>
-                        <p>Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
+                        <h2 class="title-item">Bảo Vệ Môi Trường</h2>
+                        <p class="text-item">Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
                     </div>
-                    <div class="col-3 first-main--row-col4">
+                    <div class="col-6 col-xl-3 col-item first-main--row-col4 wow fadeFromLeft" data-wow-duration="1s" data-wow-delay="0.9s">
                         <img src="./images/Icons-svg/utilities/4.svg" alt="#">
-                        <h2>Không Chứa Paraben</h2>
-                        <p>Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
+                        <h2 class="title-item">Không Chứa Paraben</h2>
+                        <p class="text-item">Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
                     </div>
                 </div>
             </div>
 
         </section>
-        <section class="second-main about-section">
+        <section class="second-main about-section wrap-content1">
             <div class="container-xxl">
                 <div class="row second-main--row">
-                    <div class="col-6 second-main--row-col1">
+                    <div class="col-md-5 col-lg-6 second-main--row-col1 wow fadeFromDown" data-wow-duration="1.5s">
                         <img src="./images/background/about-1.png" alt="#">
                     </div>
-                    <div class="col-6 second-main--row-col2">
+                    <div class="col-md-7 col-lg-6 second-main--row-col2 wow fadeFromRight" data-wow-duration="1.5s">
                         <h2>Sản Phẩm Mới</h2>
                         <div class="second-main--h1">
                             <h1>Serum Dưỡng Da Tinh Chất Yến Sào Đầu Tiên Ở Việt Nam</h1>
@@ -231,7 +258,7 @@
                             collagen, giảm nếp nhăn.</p>
                         <p>Trải nghiệm sự trẻ trung và khám phá làn da mới với sự hỗ trợ toàn diện từ serum chăm sóc da
                             hàng ngày.</p>
-                        <div class="second-button">
+                        <div class="second-button wow fadeFromUp" data-wow-duration="1.5s">
                             <button class="second-button--one">
                                 Đặt Hàng Ngay
                             </button>
@@ -244,16 +271,18 @@
             </div>
 
         </section>
-        <section class="collection-main">
+        <section class="collection-main wrap-content2">
             <div class="container-xxl">
-                <div class="collection-main--collect title-head">
+                <div class="collection-main--collect title-head wow fadeFromUp" data-wow-duration="1.5s ">
                     <div class="collection-main--collect-title title-main">
-                        <img src="./images/vector/leaf.svg" alt="#">
+                        <div class="wrap-logo">
+                            <img src="./images/vector/leaf.svg" alt="#">
+                        </div>
                         <h2>Bộ Sưu Tập</h2>
                     </div>
                     <p>VẺ ĐẸP TINH TẾ</p>
                 </div>
-                <div class="collection-main--product">
+                <div class="collection-main--product wow fadeFromDown" data-wow-duration="1.5s">
                     <div class="wrapCollectionSlide">
                         <div class="swiper">
                             <div class="swiper-wrapper">
@@ -265,7 +294,7 @@
                                                     style="width:100%;cursor:pointer" onclick="onClick(this)"
                                                     class="w3-hover-opacity">
                                             </div>
-                                            <p>Sữa Rửa Mặt HSkin Care (750ml)</p>
+                                            <p class="title-main">Sữa Rửa Mặt HSkin Care (750ml)</p>
                                             <div class="collection-main--product-list-pro--img-cost">
                                                 <div class="collection-main--product-list-pro--img-cost-gia">
                                                     <p>900.000đ</p>
@@ -277,8 +306,10 @@
                                             </div>
                                             <div class="collection-main--product-list-pro--img-oder">
                                                 <button class="but">Đặt Hàng</button>
-                                                <i class="fa fa-shopping-basket"
-                                                    style="font-size:30px; margin: 0 3px"></i>
+                                                <div class="btn-cart">
+                                                    <i class="fa fa-shopping-basket"
+                                                        style="font-size:30px; margin: 0 3px"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -291,7 +322,7 @@
                                                     style="width:100%;cursor:pointer" onclick="onClick(this)"
                                                     class="w3-hover-opacity">
                                             </div>
-                                            <p>Kem Tẩy Tế Bào Chết (900ml)</p>
+                                            <p class="title-main">Kem Tẩy Tế Bào Chết (900ml)</p>
                                             <div class="collection-main--product-list-pro--img-cost">
                                                 <div class="collection-main--product-list-pro--img-cost-gia">
                                                     <p>900.000đ</p>
@@ -300,8 +331,10 @@
                                             </div>
                                             <div class="collection-main--product-list-pro--img-oder">
                                                 <button class="but">Đặt Hàng</button>
-                                                <i class="fa fa-shopping-basket"
-                                                    style="font-size:30px; margin: 0 3px"></i>
+                                                <div class="btn-cart">
+                                                    <i class="fa fa-shopping-basket"
+                                                        style="font-size:30px; margin: 0 3px"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -314,7 +347,7 @@
                                                     style="width:100%;cursor:pointer" onclick="onClick(this)"
                                                     class="w3-hover-opacity">
                                             </div>
-                                            <p>Kem Dưỡng Mắt</p>
+                                            <p class="title-main">Kem Dưỡng Mắt</p>
                                             <div class="collection-main--product-list-pro--img-cost">
                                                 <div class="collection-main--product-list-pro--img-cost-gia">
                                                     <p>900.000đ</p>
@@ -323,8 +356,10 @@
                                             </div>
                                             <div class="collection-main--product-list-pro--img-oder">
                                                 <button class="but">Đặt Hàng</button>
-                                                <i class="fa fa-shopping-basket"
-                                                    style="font-size:30px; margin: 0 3px"></i>
+                                                <div class="btn-cart">
+                                                    <i class="fa fa-shopping-basket"
+                                                        style="font-size:30px; margin: 0 3px"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -337,7 +372,7 @@
                                                     style="width:100%;cursor:pointer" onclick="onClick(this)"
                                                     class="w3-hover-opacity">
                                             </div>
-                                            <p>Kem Dưỡng Chống Lão Hóas</p>
+                                            <p class="title-main">Kem Dưỡng Chống Lão Hóa</p>
                                             <div class="collection-main--product-list-pro--img-cost">
                                                 <div class="collection-main--product-list-pro--img-cost-gia">
                                                     <p>900.000đ</p>
@@ -346,12 +381,20 @@
                                             </div>
                                             <div class="collection-main--product-list-pro--img-oder">
                                                 <button class="but">Đặt Hàng</button>
-                                                <i class="fa fa-shopping-basket"
-                                                    style="font-size:30px; margin: 0 3px"></i>
+                                                <div class="btn-cart">
+                                                    <i class="fa fa-shopping-basket"
+                                                        style="font-size:30px; margin: 0 3px"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="wrapSwiperControl1">
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -365,27 +408,29 @@
                 </div>
             </div>
         </section>
-        <section class="favorite-main">
+        <section class="favorite-main wrap-content2">
             <div class="container-xxl">
-                <div class="favorite-main--collect title-head">
+                <div class="favorite-main--collect title-head wow fadeFromDown" data-wow-duration="1.5s">
                     <div class="favorite-main--collect-title title-main">
-                        <img src="./images/vector/leaf.svg" alt="#">
+                        <div class="wrap-logo">
+                            <img src="./images/vector/leaf.svg" alt="#">
+                        </div>
                         <h2>Sản Phẩm Được Yêu Thích</h2>
                     </div>
                     <p>ĐƯỢC ĐÁNH GIÁ CAO NHẤT</p>
                 </div>
-                <div class="wrapProductSlide">
+                <div class="wrapProductSlide wow fadeFromUp" data-wow-duration="1.5s">
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="favorite-main--product">
                                     <div class="row favorite-main--product-set">
-                                        <div class="col-6">
+                                        <div class="col-md-5 col-lg-6">
                                             <div class="favorite-main--product-set-one">
                                                 <img src="./images/product/5.png" alt="#">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-7 col-lg-6">
                                             <div class="favorite-main--product-set-two">
                                                 <h2>Bộ Sản Phẩm Cơ Bản</h2>
                                                 <div class="favorite-main--product-set-two--cost">
@@ -417,12 +462,12 @@
                             <div class="swiper-slide">
                                 <div class="favorite-main--product">
                                     <div class="row favorite-main--product-set">
-                                        <div class="col-6">
+                                        <div class="col-md-5 col-lg-6">
                                             <div class="favorite-main--product-set-one">
                                                 <img src="./images/product/7.png" alt="#">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-7 col-lg-6">
                                             <div class="favorite-main--product-set-two">
                                                 <h2>Bộ Sản Phẩm Cơ Bản</h2>
                                                 <div class="favorite-main--product-set-two--cost">
@@ -451,131 +496,194 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="wrapSwiperControl1">
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
-        <section class="promotion-main">
+        <section class="promotion-main" data-countdown="2024/01/28">
             <div class="promotion-main--mains">
                 <div class="container-xxl">
                     <div class="row">
 
-                        <div class="col-4 promotion-main--mains-four">
+                        <div class="col-md-6 col-xl-4 promotion-main--mains-four">
                             <div class="promotion-main--mains-four-image">
-                                <img class="img1" src="./images/frame_svg/frame_top.svg" alt="#">
-                                <img class="img2" src="./images/background/promotion.png" alt="#">
-                                <img class="img3" src="./images/frame_svg/frame_bottom.svg" alt="#">
+                                <img class="img1 wow fadeFromDown" data-wow-duration="1s" data-wow-delay="0.4s" src="./images/frame_svg/frame_top.svg" alt="#">
+                                <img class="img2 wow fadeFromDown" data-wow-duration="1s" src="./images/background/promotion.png" alt="#">
+                                <img class="img3 wow fadeFromUp" data-wow-duration="1s" data-wow-delay="0.4s" src="./images/frame_svg/frame_bottom.svg" alt="#">
                             </div>
                         </div>
-                        <div class="col-8 promotion-main--mains-eight">
-                            <div class="wrap-content">
-                                <div class="promotion-main--mains-eight--collect title-head">
-                                    <div class="promotion-main--mains-eight--collect-title title-main">
-                                        <img class="img2" src="./images/vector/leaf.svg" alt="#">
-                                        <h2>Khuyến Mãi</h2>
+                        <div class="col-xl-8 promotion-main--mains-eight">
+                            <div class="wrap-content wrapContent3">
+                                <div class="wrap-count">
+                                    <div class="promotion-main--mains-eight--collect title-head">
+                                        <div class="promotion-main--mains-eight--collect-title title-main">
+                                            <div class="wrap-logo">
+                                                <img class="img2" src="./images/vector/leaf.svg" alt="#">
+                                            </div>
+                                            <h2>Khuyến Mãi</h2>
+                                        </div>
+                                        <p>TRẢI NGHIỆM SẢN PHẨM VỚI MỨC GIÁ TỐT NHẤT</p>
                                     </div>
-                                    <p>TRẢI NGHIỆM SẢN PHẨM VỚI MỨC GIÁ TỐT NHẤT</p>
+                                    <div class="promotion-main--mains-eight--time">
+                                        <div class="text-item hour">
+                                            <h2>00</h2>
+                                            <p>GIỜ</p>
+                                        </div>
+                                        <div class="text-item minute">
+                                            <h2>00</h2>
+                                            <p>PHÚT</p>
+                                        </div>
+                                        <div class="text-item second">
+                                            <h2>00</h2>
+                                            <p>GIÂY</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="promotion-main--mains-eight--time">
-                                    <div class="day">
-                                        <h2>01</h2>
-                                        <p>NGÀY</p>
-                                    </div>
-                                    <div class="minute">
-                                        <h2>59</h2>
-                                        <p>PHÚT</p>
-                                    </div>
-                                    <div class="hours">
-                                        <h2>23</h2>
-                                        <p>GIỜ</p>
-                                    </div>
-                                </div>
-                                <div class="promotion-main--mains-eight--product">
+
+                                <div class="promotion-main--mains-eight--product wow fadeFromLeft" data-wow-duration="1.5s">
                                     <div class="wrapPromotionSlide ">
                                         <div class="swiper">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
                                                     <div class="promotion-main--mains-eight--product-class">
-                                                        <div class="promotion-main--mains-eight--product-class-image">
-                                                            <img src="./images/product/6.png" alt="#">
-                                                        </div>
-                                                        <div
-                                                            class="promotion-main--mains-eight--product-class-information">
-                                                            <h2>Dưỡng Ẩm Da (350ml)</h2>
-                                                            <p>900.000đ</p>
-                                                            <div class="free">
-                                                                <h3>700.000đ</h3>
-                                                                <p>-35%</p>
+                                                        <div class="row">
+
+                                                            <div class="col-5">
+
+                                                                <div
+                                                                    class="promotion-main--mains-eight--product-class-image">
+                                                                    <div class="imgSquare wrapImgResize">
+                                                                        <img class="object-contain"
+                                                                            src="./images/product/6.png" alt="#">
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="collection-main--product-list-pro--img-oder">
-                                                                <button class="but">Đặt Hàng</button>
-                                                                <i class="fa fa-shopping-basket"
-                                                                    style="font-size:30px; margin: 0 3px"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="promotion-main--mains-eight--product-class">
-                                                        <div class="promotion-main--mains-eight--product-class-image">
-                                                            <img src="./images/product/6.png" alt="#">
-                                                        </div>
-                                                        <div
-                                                            class="promotion-main--mains-eight--product-class-information">
-                                                            <h2>Sữa Rửa Mặt HSkin Care (350ml)</h2>
-                                                            <p>900.000đ</p>
-                                                            <div class="free">
-                                                                <h3>700.000đ</h3>
-                                                                <p>-35%</p>
-                                                            </div>
-                                                            <div class="collection-main--product-list-pro--img-oder">
-                                                                <button class="but">Đặt Hàng</button>
-                                                                <i class="fa fa-shopping-basket"
-                                                                    style="font-size:30px; margin: 0 3px"></i>
+                                                            <div
+                                                                class="col-7 promotion-main--mains-eight--product-class-information">
+                                                                <h2>Dưỡng Ẩm Da (350ml)</h2>
+                                                                <p>900.000đ</p>
+                                                                <div class="free">
+                                                                    <h3>700.000đ</h3>
+                                                                    <p>-35%</p>
+                                                                </div>
+                                                                <div
+                                                                    class="collection-main--product-list-pro--img-oder">
+                                                                    <button class="but">Đặt Hàng</button>
+                                                                    <div class="btn-cart">
+                                                                        <i class="fa fa-shopping-basket"
+                                                                            style="font-size:30px; margin: 0 3px"></i>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="promotion-main--mains-eight--product-class">
-                                                        <div class="promotion-main--mains-eight--product-class-image">
-                                                            <img src="./images/product/6.png" alt="#">
-                                                        </div>
-                                                        <div
-                                                            class="promotion-main--mains-eight--product-class-information">
-                                                            <h2>Dưỡng Ẩm Da (350ml)</h2>
-                                                            <p>900.000đ</p>
-                                                            <div class="free">
-                                                                <h3>700.000đ</h3>
-                                                                <p>-35%</p>
+                                                        <div class="row">
+
+                                                            <div class="col-5">
+
+                                                                <div
+                                                                    class="promotion-main--mains-eight--product-class-image">
+                                                                    <div class="imgSquare wrapImgResize">
+                                                                        <img class="object-contain"
+                                                                            src="./images/product/6.png" alt="#">
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="collection-main--product-list-pro--img-oder">
-                                                                <button class="but">Đặt Hàng</button>
-                                                                <i class="fa fa-shopping-basket"
-                                                                    style="font-size:30px; margin: 0 3px"></i>
+                                                            <div
+                                                                class="col-7 promotion-main--mains-eight--product-class-information">
+                                                                <h2>Sữa Rửa Mặt HSkin Care (350ml)</h2>
+                                                                <p>900.000đ</p>
+                                                                <div class="free">
+                                                                    <h3>700.000đ</h3>
+                                                                    <p>-35%</p>
+                                                                </div>
+                                                                <div
+                                                                    class="collection-main--product-list-pro--img-oder">
+                                                                    <button class="but">Đặt Hàng</button>
+                                                                    <div class="btn-cart">
+                                                                        <i class="fa fa-shopping-basket"
+                                                                            style="font-size:30px; margin: 0 3px"></i>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="promotion-main--mains-eight--product-class">
-                                                        <div class="promotion-main--mains-eight--product-class-image">
-                                                            <img src="./images/product/6.png" alt="#">
-                                                        </div>
-                                                        <div
-                                                            class="promotion-main--mains-eight--product-class-information">
-                                                            <h2>Dưỡng Ẩm Da (350ml)</h2>
-                                                            <p>900.000đ</p>
-                                                            <div class="free">
-                                                                <h3>700.000đ</h3>
-                                                                <p>-35%</p>
+                                                        <div class="row">
+
+                                                            <div class="col-5">
+
+                                                                <div
+                                                                    class="promotion-main--mains-eight--product-class-image">
+                                                                    <div class="imgSquare wrapImgResize">
+                                                                        <img class="object-contain"
+                                                                            src="./images/product/6.png" alt="#">
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="collection-main--product-list-pro--img-oder">
-                                                                <button class="but">Đặt Hàng</button>
-                                                                <i class="fa fa-shopping-basket"
-                                                                    style="font-size:30px; margin: 0 3px"></i>
+                                                            <div
+                                                                class="col-7 promotion-main--mains-eight--product-class-information">
+                                                                <h2>Dưỡng Ẩm Da (350ml)</h2>
+                                                                <p>900.000đ</p>
+                                                                <div class="free">
+                                                                    <h3>700.000đ</h3>
+                                                                    <p>-35%</p>
+                                                                </div>
+                                                                <div
+                                                                    class="collection-main--product-list-pro--img-oder">
+                                                                    <button class="but">Đặt Hàng</button>
+                                                                    <div class="btn-cart">
+                                                                        <i class="fa fa-shopping-basket"
+                                                                            style="font-size:30px; margin: 0 3px"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="promotion-main--mains-eight--product-class">
+                                                        <div class="row">
+
+                                                            <div class="col-5">
+
+                                                                <div
+                                                                    class="promotion-main--mains-eight--product-class-image">
+                                                                    <div class="imgSquare wrapImgResize">
+                                                                        <img class="object-contain"
+                                                                            src="./images/product/6.png" alt="#">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-7 promotion-main--mains-eight--product-class-information">
+                                                                <h2>Dưỡng Ẩm Da (350ml)</h2>
+                                                                <p>900.000đ</p>
+                                                                <div class="free">
+                                                                    <h3>700.000đ</h3>
+                                                                    <p>-35%</p>
+                                                                </div>
+                                                                <div
+                                                                    class="collection-main--product-list-pro--img-oder">
+                                                                    <button class="but">Đặt Hàng</button>
+                                                                    <div class="btn-cart">
+                                                                        <i class="fa fa-shopping-basket"
+                                                                            style="font-size:30px; margin: 0 3px"></i>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -583,7 +691,11 @@
                                             </div>
                                         </div>
 
-
+                                        <div class="mt-4">
+                                            <div class="wrapSwiperControl1">
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -593,17 +705,19 @@
                 </div>
 
         </section>
-        <section class="evalue-main" style="background-image: url(./images/background/1.png);">
+        <section class="evalue-main wrap-content2">
             <div class="container-xxl">
-                <div class="evalue-main--collect title-head">
+                <div class="evalue-main--collect title-head wow fadeFromUp" data-wow-duration="1.5s">
                     <div class="evalue-main--collect-title title-main">
-                        <img src="./images/vector/leaf.svg" alt="#">
+                        <div class="wrap-logo">
+                            <img src="./images/vector/leaf.svg" alt="#">
+                        </div>
                         <h2>Cảm Nhận</h2>
                     </div>
                     <p>KHÁCH HÀNG NÓI GÌ VỀ SẢN PHẨM</p>
                 </div>
                 <div class="evalue-main--product">
-                    <div class="wrapTesterminialSlise">
+                    <div class="wrapTesterminialSlise wow fadeFromDown" data-wow-duration="1.5s">
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -680,18 +794,20 @@
                 </div>
             </div>
         </section>
-        <section class="experience-main">
+        <section class="experience-main wrap-content2">
             <div class="container-xxl">
                 <div class="blog-edit">
-                    <div class="experience-main--collect title-head">
+                    <div class="experience-main--collect title-head wow zoomIn" data-wow-duration="1.5s">
                         <div class="experience-main--collect-title title-main">
-                            <img src="./images/vector/leaf.svg" alt="#">
+                            <div class="wrap-logo">
+                                <img src="./images/vector/leaf.svg" alt="#">
+                            </div>
                             <h2>Kinh Nghiệm Làm Đẹp</h2>
                         </div>
                         <p>ĐẸP MỖI NGÀY</p>
                     </div>
                     <div class="experience-main--introduce">
-                        <div class="wrapBlogSlide">
+                        <div class="wrapBlogSlide wow fadeFromLeft" data-wow-duration="1.5s">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -758,18 +874,20 @@
                 </div>
             </div>
         </section>
-        <section class="news-main">
+        <section class="news-main wrap-content2">
             <div class="container-xxl">
                 <div class="blog-edit">
-                    <div class="news-main--collect title-head">
+                    <div class="news-main--collect title-head wow zoomIn" data-wow-duration="1.5s">
                         <div class="news-main--collect-title title-main">
-                            <img src="./images/vector/leaf.svg" alt="#">
+                            <div class="wrap-logo">
+                                <img src="./images/vector/leaf.svg" alt="#">
+                            </div>
                             <h2>Tin Tức</h2>
                         </div>
                         <p>CẬP NHẬT MỚI NHẤT</p>
                     </div>
                     <div class="news-main--blog">
-                        <div class="wrapNewSlide">
+                        <div class="wrapNewSlide wow fadeFromRight" data-wow-duration="1.5s">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -836,23 +954,172 @@
                 </div>
             </div>
         </section>
-        <section class="subcribe-main">
+    </main>
+    <footer class="footer">
+        <div class="contentMain bgColorFooter">
             <div class="container-xxl">
-                <div class="subcribe-main--regist">
-                    <h2>Đăng Ký Để Nhận Ưu Đãi Độc Quyền</h2>
-                    <div class="subcribe-main--regist-write">
-                        <form>
-                            <input type="email" id="email" name="email" placeholder="Nhập Email của bạn" size="35">
-                            <input type="tel" id="phone" name="phone" placeholder="Số điện thoại"
-                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" size="35">
-                        </form>
-                        <button class="but">Đăng Ký</button>
+                <div class="contentItem">
+                    <div class="wrapSubscribe">
+                        <h3 class="titleMain">Đăng Ký để nhận ưu đãi độc quyền</h3>
+                    </div>
+                    <div class="frmFooter">
+                        <div class="formContent">
+                            <div class="inputGroupItem">
+                                <input class="inputItem" type="text" placeholder="Nhập Email của bạn">
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="inputGroupItem">
+                                <input class="inputItem" type="text" placeholder="Số điện thoại">
+                            </div>
+                        </div>
+                        <button class="btnSend but">Đăng Ký</button>
+                    </div>
+                </div>
+
+                <hr class="separator">
+                <div class="contentItem">
+                    <div class="row rowList">
+
+
+                        <div class="col-sm-6 col-xl colItem">
+                            <div class="contentCol v1">
+                                <div class="titleFooter">thông tin liên hệ</div>
+                                <div class="wrapMenu wrapContact wrapIconAndText"><a class="linkItem"
+                                        href="https://maps.app.goo.gl/rZnc5nW8ar8JgFZa9"
+                                        title="27A Lê Lợi, P. Xương Huân, Nha Trang, Khánh Hoà." target="_blank"><svg
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512">
+                                            <path
+                                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                                        </svg><span>27A Lê Lợi, P. Xương Huân, Nha Trang, Khánh Hoà.</span></a>
+                                    <div class="linkItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.976 17.2139L17.6989 15.491C17.931 15.2618 18.2246 15.1049 18.5441 15.0394C18.8635 14.9739 19.1952 15.0025 19.4987 15.1218L21.5985 15.9602C21.9052 16.0847 22.1683 16.2972 22.3544 16.5709C22.5406 16.8447 22.6415 17.1674 22.6445 17.4985V21.3442C22.6427 21.5694 22.5954 21.7919 22.5054 21.9983C22.4153 22.2047 22.2844 22.3908 22.1206 22.5453C21.9568 22.6998 21.7634 22.8195 21.552 22.8973C21.3407 22.9751 21.1158 23.0093 20.8909 22.9979C6.1771 22.0826 3.20819 9.62239 2.64672 4.85368C2.62065 4.6195 2.64447 4.38246 2.71659 4.15814C2.78872 3.93383 2.90752 3.72733 3.06519 3.55223C3.22285 3.37713 3.4158 3.23739 3.63135 3.14222C3.84689 3.04704 4.08015 2.99859 4.31577 3.00003H8.03075C8.36226 3.00101 8.68589 3.10115 8.96003 3.28756C9.23416 3.47397 9.44626 3.73814 9.56904 4.04607L10.4074 6.14584C10.5307 6.44817 10.5621 6.78011 10.4978 7.10021C10.4335 7.4203 10.2763 7.71436 10.0459 7.94565L8.32302 9.66854C8.32302 9.66854 9.31522 16.3832 15.976 17.2139Z"
+                                                fill="currentColor" />
+                                        </svg><span> <a href="tel:02583818468"
+                                                title="0258.3818468">0258.3818468</a><span
+                                                style="margin: 0 4px;">-</span></span><span> <a href="tel:0905161468"
+                                                title="0905.161.468">0905.161.468</a></span>
+                                    </div><a class="linkItem" href="mailto:myphamhskincare@gmail.com"
+                                        title="myphamhskincare@gmail.com" target=""><svg width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_5663_11320)">
+                                                <path
+                                                    d="M22.6365 5.008C22.5423 4.99733 22.4473 4.99733 22.3531 5.008H3.00275C2.87873 5.0101 2.75553 5.03054 2.63647 5.06877L12.6227 16L22.6365 5.008Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M24.5465 7L13.6265 16.6196C13.3454 16.8668 12.9653 17.0055 12.569 17.0055C12.1727 17.0055 11.7925 16.8668 11.5115 16.6196L0.688975 7.07298C0.655704 7.18114 0.638064 7.2926 0.636475 7.40469V20.6732C0.636475 21.0251 0.79451 21.3625 1.07581 21.6114C1.35712 21.8602 1.73865 22 2.13647 22H23.1365C23.5343 22 23.9158 21.8602 24.1971 21.6114C24.4784 21.3625 24.6365 21.0251 24.6365 20.6732V7.40469C24.6305 7.26647 24.6001 7.12992 24.5465 7V7ZM3.16397 20.6732H2.12147V19.7245L7.57397 14.9412L8.63147 15.8766L3.16397 20.6732ZM23.1215 20.6732H22.0715L16.604 15.8766L17.6615 14.9412L23.114 19.7245L23.1215 20.6732Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_5663_11320">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg><span>myphamhskincare@gmail.com</span></a><a class="linkItem"
+                                        href="javascript:void(0);"
+                                        title="GPKD số: 4201487334 do Sở Kế hoạch và Đầu tư tỉnh Khánh Hòa cấp ngày 25/5/2012"
+                                        target=""><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <path
+                                                d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM64 112c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112zm0 256c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V368zm144 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H208c-8.8 0-16-7.2-16-16s7.2-16 16-16zM192 128c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H208c-8.8 0-16-7.2-16-16zm16 112H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H208c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-52.7-27.3c6.2 6.2 6.2 16.4 0 22.6l-48 48c-6.2 6.2-16.4 6.2-22.6 0l-24-24c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L96 249.4l36.7-36.7c6.2-6.2 16.4-6.2 22.6 0z" />
+                                        </svg> <span>GPKD số: 4201487334 do Sở Kế hoạch và Đầu tư tỉnh Khánh Hòa cấp
+                                            ngày 25/5/2012</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl colItem">
+                            <div class="contentCol v2">
+                                <div class="titleFooter">Khách hàng</div>
+                                <div class="wrapMenu"><a class="linkItem" href="javascript:void(0);"
+                                        title="Chính sách đổi trả"><svg width="10" height="10" viewBox="0 0 10 10"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.64628 1.67176C6.64628 1.90622 6.6157 2.11009 6.54434 2.28338C6.47299 2.45668 6.39144 2.61978 6.2895 2.76249C6.18756 2.91539 6.07543 3.0581 5.95311 3.19062C5.83079 3.32314 5.71865 3.47604 5.60652 3.62895C5.49439 3.78186 5.40265 3.95515 5.33129 4.14883C5.25994 4.34251 5.20897 4.56677 5.18858 4.82161C5.44343 4.80122 5.65749 4.75026 5.85117 4.66871C6.04485 4.58716 6.20795 4.49541 6.37105 4.38328C6.52396 4.27115 6.67686 4.15902 6.80938 4.0367C6.9419 3.91437 7.08461 3.80224 7.23751 3.70031C7.39042 3.59837 7.54332 3.50663 7.72681 3.44546C7.9001 3.37411 8.10398 3.34353 8.32824 3.34353C8.56269 3.34353 8.77676 3.3843 8.98063 3.46585C9.18451 3.5474 9.3578 3.65953 9.5107 3.81244C9.66361 3.96534 9.77574 4.13863 9.86748 4.34251C9.94903 4.54638 10 4.77064 10 5.01529C10 5.25994 9.95923 5.4842 9.86748 5.68807C9.78593 5.89195 9.66361 6.06524 9.5107 6.20795C9.3578 6.35066 9.18451 6.46279 8.98063 6.54434C8.77676 6.62589 8.56269 6.66667 8.32824 6.66667C8.10398 6.66667 7.9001 6.63609 7.72681 6.56473C7.55352 6.49337 7.39042 6.41183 7.23751 6.30989C7.08461 6.20795 6.9419 6.09582 6.80938 5.9735C6.67686 5.85117 6.52396 5.73904 6.37105 5.62691C6.21814 5.51478 6.04485 5.42304 5.85117 5.35168C5.65749 5.27013 5.44343 5.22936 5.18858 5.20897C5.20897 5.45362 5.25994 5.67788 5.33129 5.86137C5.41284 6.04485 5.50459 6.21814 5.60652 6.37105C5.71865 6.52396 5.83079 6.67686 5.95311 6.80938C6.07543 6.9419 6.18756 7.08461 6.2895 7.23751C6.39144 7.39042 6.47299 7.54332 6.54434 7.72681C6.6157 7.9001 6.64628 8.10398 6.64628 8.32824C6.64628 8.56269 6.6055 8.77676 6.52396 8.98063C6.44241 9.18451 6.33028 9.36799 6.18756 9.5107C6.04485 9.66361 5.87156 9.77574 5.66769 9.86748C5.46381 9.94903 5.23955 10 4.9949 10C4.75026 10 4.52599 9.95923 4.32212 9.86748C4.11825 9.78593 3.94495 9.66361 3.80224 9.5107C3.65953 9.3578 3.5474 9.18451 3.46585 8.98063C3.3843 8.77676 3.34353 8.56269 3.34353 8.32824C3.34353 8.10398 3.37411 7.9001 3.44546 7.72681C3.51682 7.55352 3.59837 7.39042 3.70031 7.23751C3.80224 7.08461 3.91437 6.95209 4.0367 6.80938C4.15902 6.67686 4.27115 6.52396 4.38328 6.37105C4.49541 6.21814 4.58716 6.04485 4.66871 5.86137C4.75026 5.67788 4.80122 5.45362 4.82161 5.20897C4.56677 5.22936 4.3527 5.28033 4.15902 5.35168C3.96534 5.43323 3.80224 5.52497 3.63914 5.62691C3.48624 5.73904 3.33333 5.85117 3.20082 5.9735C3.0683 6.09582 2.92559 6.20795 2.77268 6.30989C2.61978 6.41183 2.46687 6.49337 2.28338 6.56473C2.0999 6.63609 1.90622 6.66667 1.68196 6.66667C1.4475 6.66667 1.22324 6.62589 1.01937 6.54434C0.815494 6.46279 0.642202 6.35066 0.489297 6.20795C0.336391 6.06524 0.224261 5.89195 0.132518 5.68807C0.0509684 5.4842 0 5.25994 0 5.01529C0 4.77064 0.0407747 4.54638 0.132518 4.34251C0.224261 4.13863 0.336391 3.96534 0.489297 3.81244C0.642202 3.65953 0.815494 3.5474 1.01937 3.46585C1.22324 3.3843 1.43731 3.34353 1.68196 3.34353C1.90622 3.34353 2.11009 3.37411 2.28338 3.44546C2.45668 3.51682 2.61978 3.59837 2.77268 3.70031C2.92559 3.80224 3.0683 3.91437 3.20082 4.0367C3.33333 4.15902 3.48624 4.28135 3.63914 4.38328C3.79205 4.49541 3.96534 4.58716 4.15902 4.66871C4.3527 4.75026 4.56677 4.80122 4.82161 4.82161C4.80122 4.56677 4.76045 4.34251 4.6789 4.14883C4.59735 3.95515 4.48522 3.78186 4.38328 3.62895C4.27115 3.47604 4.15902 3.33333 4.0367 3.19062C3.91437 3.0581 3.80224 2.91539 3.70031 2.76249C3.59837 2.60958 3.50663 2.45668 3.44546 2.27319C3.3843 2.0897 3.34353 1.89602 3.34353 1.67176C3.34353 1.43731 3.3843 1.22324 3.46585 1.01937C3.5474 0.815494 3.65953 0.642202 3.80224 0.489297C3.94495 0.336391 4.11825 0.224261 4.32212 0.132518C4.52599 0.0407747 4.75026 0 4.9949 0C5.23955 0 5.46381 0.0407747 5.66769 0.132518C5.87156 0.224261 6.04485 0.336391 6.18756 0.489297C6.33028 0.642202 6.44241 0.815494 6.52396 1.01937C6.6055 1.22324 6.64628 1.43731 6.64628 1.67176Z"
+                                                fill="currentColor" />
+                                        </svg><span>Chính sách đổi trả</span></a><a class="linkItem"
+                                        href="javascript:void(0);" title="Điều khoản và điều kiện"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.64628 1.67176C6.64628 1.90622 6.6157 2.11009 6.54434 2.28338C6.47299 2.45668 6.39144 2.61978 6.2895 2.76249C6.18756 2.91539 6.07543 3.0581 5.95311 3.19062C5.83079 3.32314 5.71865 3.47604 5.60652 3.62895C5.49439 3.78186 5.40265 3.95515 5.33129 4.14883C5.25994 4.34251 5.20897 4.56677 5.18858 4.82161C5.44343 4.80122 5.65749 4.75026 5.85117 4.66871C6.04485 4.58716 6.20795 4.49541 6.37105 4.38328C6.52396 4.27115 6.67686 4.15902 6.80938 4.0367C6.9419 3.91437 7.08461 3.80224 7.23751 3.70031C7.39042 3.59837 7.54332 3.50663 7.72681 3.44546C7.9001 3.37411 8.10398 3.34353 8.32824 3.34353C8.56269 3.34353 8.77676 3.3843 8.98063 3.46585C9.18451 3.5474 9.3578 3.65953 9.5107 3.81244C9.66361 3.96534 9.77574 4.13863 9.86748 4.34251C9.94903 4.54638 10 4.77064 10 5.01529C10 5.25994 9.95923 5.4842 9.86748 5.68807C9.78593 5.89195 9.66361 6.06524 9.5107 6.20795C9.3578 6.35066 9.18451 6.46279 8.98063 6.54434C8.77676 6.62589 8.56269 6.66667 8.32824 6.66667C8.10398 6.66667 7.9001 6.63609 7.72681 6.56473C7.55352 6.49337 7.39042 6.41183 7.23751 6.30989C7.08461 6.20795 6.9419 6.09582 6.80938 5.9735C6.67686 5.85117 6.52396 5.73904 6.37105 5.62691C6.21814 5.51478 6.04485 5.42304 5.85117 5.35168C5.65749 5.27013 5.44343 5.22936 5.18858 5.20897C5.20897 5.45362 5.25994 5.67788 5.33129 5.86137C5.41284 6.04485 5.50459 6.21814 5.60652 6.37105C5.71865 6.52396 5.83079 6.67686 5.95311 6.80938C6.07543 6.9419 6.18756 7.08461 6.2895 7.23751C6.39144 7.39042 6.47299 7.54332 6.54434 7.72681C6.6157 7.9001 6.64628 8.10398 6.64628 8.32824C6.64628 8.56269 6.6055 8.77676 6.52396 8.98063C6.44241 9.18451 6.33028 9.36799 6.18756 9.5107C6.04485 9.66361 5.87156 9.77574 5.66769 9.86748C5.46381 9.94903 5.23955 10 4.9949 10C4.75026 10 4.52599 9.95923 4.32212 9.86748C4.11825 9.78593 3.94495 9.66361 3.80224 9.5107C3.65953 9.3578 3.5474 9.18451 3.46585 8.98063C3.3843 8.77676 3.34353 8.56269 3.34353 8.32824C3.34353 8.10398 3.37411 7.9001 3.44546 7.72681C3.51682 7.55352 3.59837 7.39042 3.70031 7.23751C3.80224 7.08461 3.91437 6.95209 4.0367 6.80938C4.15902 6.67686 4.27115 6.52396 4.38328 6.37105C4.49541 6.21814 4.58716 6.04485 4.66871 5.86137C4.75026 5.67788 4.80122 5.45362 4.82161 5.20897C4.56677 5.22936 4.3527 5.28033 4.15902 5.35168C3.96534 5.43323 3.80224 5.52497 3.63914 5.62691C3.48624 5.73904 3.33333 5.85117 3.20082 5.9735C3.0683 6.09582 2.92559 6.20795 2.77268 6.30989C2.61978 6.41183 2.46687 6.49337 2.28338 6.56473C2.0999 6.63609 1.90622 6.66667 1.68196 6.66667C1.4475 6.66667 1.22324 6.62589 1.01937 6.54434C0.815494 6.46279 0.642202 6.35066 0.489297 6.20795C0.336391 6.06524 0.224261 5.89195 0.132518 5.68807C0.0509684 5.4842 0 5.25994 0 5.01529C0 4.77064 0.0407747 4.54638 0.132518 4.34251C0.224261 4.13863 0.336391 3.96534 0.489297 3.81244C0.642202 3.65953 0.815494 3.5474 1.01937 3.46585C1.22324 3.3843 1.43731 3.34353 1.68196 3.34353C1.90622 3.34353 2.11009 3.37411 2.28338 3.44546C2.45668 3.51682 2.61978 3.59837 2.77268 3.70031C2.92559 3.80224 3.0683 3.91437 3.20082 4.0367C3.33333 4.15902 3.48624 4.28135 3.63914 4.38328C3.79205 4.49541 3.96534 4.58716 4.15902 4.66871C4.3527 4.75026 4.56677 4.80122 4.82161 4.82161C4.80122 4.56677 4.76045 4.34251 4.6789 4.14883C4.59735 3.95515 4.48522 3.78186 4.38328 3.62895C4.27115 3.47604 4.15902 3.33333 4.0367 3.19062C3.91437 3.0581 3.80224 2.91539 3.70031 2.76249C3.59837 2.60958 3.50663 2.45668 3.44546 2.27319C3.3843 2.0897 3.34353 1.89602 3.34353 1.67176C3.34353 1.43731 3.3843 1.22324 3.46585 1.01937C3.5474 0.815494 3.65953 0.642202 3.80224 0.489297C3.94495 0.336391 4.11825 0.224261 4.32212 0.132518C4.52599 0.0407747 4.75026 0 4.9949 0C5.23955 0 5.46381 0.0407747 5.66769 0.132518C5.87156 0.224261 6.04485 0.336391 6.18756 0.489297C6.33028 0.642202 6.44241 0.815494 6.52396 1.01937C6.6055 1.22324 6.64628 1.43731 6.64628 1.67176Z"
+                                                fill="currentColor" />
+                                        </svg><span>Điều khoản và điều kiện</span></a><a class="linkItem"
+                                        href="javascript:void(0);" title="Những câu hỏi thường gặp"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.64628 1.67176C6.64628 1.90622 6.6157 2.11009 6.54434 2.28338C6.47299 2.45668 6.39144 2.61978 6.2895 2.76249C6.18756 2.91539 6.07543 3.0581 5.95311 3.19062C5.83079 3.32314 5.71865 3.47604 5.60652 3.62895C5.49439 3.78186 5.40265 3.95515 5.33129 4.14883C5.25994 4.34251 5.20897 4.56677 5.18858 4.82161C5.44343 4.80122 5.65749 4.75026 5.85117 4.66871C6.04485 4.58716 6.20795 4.49541 6.37105 4.38328C6.52396 4.27115 6.67686 4.15902 6.80938 4.0367C6.9419 3.91437 7.08461 3.80224 7.23751 3.70031C7.39042 3.59837 7.54332 3.50663 7.72681 3.44546C7.9001 3.37411 8.10398 3.34353 8.32824 3.34353C8.56269 3.34353 8.77676 3.3843 8.98063 3.46585C9.18451 3.5474 9.3578 3.65953 9.5107 3.81244C9.66361 3.96534 9.77574 4.13863 9.86748 4.34251C9.94903 4.54638 10 4.77064 10 5.01529C10 5.25994 9.95923 5.4842 9.86748 5.68807C9.78593 5.89195 9.66361 6.06524 9.5107 6.20795C9.3578 6.35066 9.18451 6.46279 8.98063 6.54434C8.77676 6.62589 8.56269 6.66667 8.32824 6.66667C8.10398 6.66667 7.9001 6.63609 7.72681 6.56473C7.55352 6.49337 7.39042 6.41183 7.23751 6.30989C7.08461 6.20795 6.9419 6.09582 6.80938 5.9735C6.67686 5.85117 6.52396 5.73904 6.37105 5.62691C6.21814 5.51478 6.04485 5.42304 5.85117 5.35168C5.65749 5.27013 5.44343 5.22936 5.18858 5.20897C5.20897 5.45362 5.25994 5.67788 5.33129 5.86137C5.41284 6.04485 5.50459 6.21814 5.60652 6.37105C5.71865 6.52396 5.83079 6.67686 5.95311 6.80938C6.07543 6.9419 6.18756 7.08461 6.2895 7.23751C6.39144 7.39042 6.47299 7.54332 6.54434 7.72681C6.6157 7.9001 6.64628 8.10398 6.64628 8.32824C6.64628 8.56269 6.6055 8.77676 6.52396 8.98063C6.44241 9.18451 6.33028 9.36799 6.18756 9.5107C6.04485 9.66361 5.87156 9.77574 5.66769 9.86748C5.46381 9.94903 5.23955 10 4.9949 10C4.75026 10 4.52599 9.95923 4.32212 9.86748C4.11825 9.78593 3.94495 9.66361 3.80224 9.5107C3.65953 9.3578 3.5474 9.18451 3.46585 8.98063C3.3843 8.77676 3.34353 8.56269 3.34353 8.32824C3.34353 8.10398 3.37411 7.9001 3.44546 7.72681C3.51682 7.55352 3.59837 7.39042 3.70031 7.23751C3.80224 7.08461 3.91437 6.95209 4.0367 6.80938C4.15902 6.67686 4.27115 6.52396 4.38328 6.37105C4.49541 6.21814 4.58716 6.04485 4.66871 5.86137C4.75026 5.67788 4.80122 5.45362 4.82161 5.20897C4.56677 5.22936 4.3527 5.28033 4.15902 5.35168C3.96534 5.43323 3.80224 5.52497 3.63914 5.62691C3.48624 5.73904 3.33333 5.85117 3.20082 5.9735C3.0683 6.09582 2.92559 6.20795 2.77268 6.30989C2.61978 6.41183 2.46687 6.49337 2.28338 6.56473C2.0999 6.63609 1.90622 6.66667 1.68196 6.66667C1.4475 6.66667 1.22324 6.62589 1.01937 6.54434C0.815494 6.46279 0.642202 6.35066 0.489297 6.20795C0.336391 6.06524 0.224261 5.89195 0.132518 5.68807C0.0509684 5.4842 0 5.25994 0 5.01529C0 4.77064 0.0407747 4.54638 0.132518 4.34251C0.224261 4.13863 0.336391 3.96534 0.489297 3.81244C0.642202 3.65953 0.815494 3.5474 1.01937 3.46585C1.22324 3.3843 1.43731 3.34353 1.68196 3.34353C1.90622 3.34353 2.11009 3.37411 2.28338 3.44546C2.45668 3.51682 2.61978 3.59837 2.77268 3.70031C2.92559 3.80224 3.0683 3.91437 3.20082 4.0367C3.33333 4.15902 3.48624 4.28135 3.63914 4.38328C3.79205 4.49541 3.96534 4.58716 4.15902 4.66871C4.3527 4.75026 4.56677 4.80122 4.82161 4.82161C4.80122 4.56677 4.76045 4.34251 4.6789 4.14883C4.59735 3.95515 4.48522 3.78186 4.38328 3.62895C4.27115 3.47604 4.15902 3.33333 4.0367 3.19062C3.91437 3.0581 3.80224 2.91539 3.70031 2.76249C3.59837 2.60958 3.50663 2.45668 3.44546 2.27319C3.3843 2.0897 3.34353 1.89602 3.34353 1.67176C3.34353 1.43731 3.3843 1.22324 3.46585 1.01937C3.5474 0.815494 3.65953 0.642202 3.80224 0.489297C3.94495 0.336391 4.11825 0.224261 4.32212 0.132518C4.52599 0.0407747 4.75026 0 4.9949 0C5.23955 0 5.46381 0.0407747 5.66769 0.132518C5.87156 0.224261 6.04485 0.336391 6.18756 0.489297C6.33028 0.642202 6.44241 0.815494 6.52396 1.01937C6.6055 1.22324 6.64628 1.43731 6.64628 1.67176Z"
+                                                fill="currentColor" />
+                                        </svg><span>Những câu hỏi thường gặp</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl colItem">
+                            <div class="contentCol v3">
+                                <div class="titleFooter">sản phẩm</div>
+
+                                <div class="wrapMenu"><a class="linkItem" href="javascript:void(0);"
+                                        title="Chính sách bán hàng"><svg width="10" height="10" viewBox="0 0 10 10"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.64628 1.67176C6.64628 1.90622 6.6157 2.11009 6.54434 2.28338C6.47299 2.45668 6.39144 2.61978 6.2895 2.76249C6.18756 2.91539 6.07543 3.0581 5.95311 3.19062C5.83079 3.32314 5.71865 3.47604 5.60652 3.62895C5.49439 3.78186 5.40265 3.95515 5.33129 4.14883C5.25994 4.34251 5.20897 4.56677 5.18858 4.82161C5.44343 4.80122 5.65749 4.75026 5.85117 4.66871C6.04485 4.58716 6.20795 4.49541 6.37105 4.38328C6.52396 4.27115 6.67686 4.15902 6.80938 4.0367C6.9419 3.91437 7.08461 3.80224 7.23751 3.70031C7.39042 3.59837 7.54332 3.50663 7.72681 3.44546C7.9001 3.37411 8.10398 3.34353 8.32824 3.34353C8.56269 3.34353 8.77676 3.3843 8.98063 3.46585C9.18451 3.5474 9.3578 3.65953 9.5107 3.81244C9.66361 3.96534 9.77574 4.13863 9.86748 4.34251C9.94903 4.54638 10 4.77064 10 5.01529C10 5.25994 9.95923 5.4842 9.86748 5.68807C9.78593 5.89195 9.66361 6.06524 9.5107 6.20795C9.3578 6.35066 9.18451 6.46279 8.98063 6.54434C8.77676 6.62589 8.56269 6.66667 8.32824 6.66667C8.10398 6.66667 7.9001 6.63609 7.72681 6.56473C7.55352 6.49337 7.39042 6.41183 7.23751 6.30989C7.08461 6.20795 6.9419 6.09582 6.80938 5.9735C6.67686 5.85117 6.52396 5.73904 6.37105 5.62691C6.21814 5.51478 6.04485 5.42304 5.85117 5.35168C5.65749 5.27013 5.44343 5.22936 5.18858 5.20897C5.20897 5.45362 5.25994 5.67788 5.33129 5.86137C5.41284 6.04485 5.50459 6.21814 5.60652 6.37105C5.71865 6.52396 5.83079 6.67686 5.95311 6.80938C6.07543 6.9419 6.18756 7.08461 6.2895 7.23751C6.39144 7.39042 6.47299 7.54332 6.54434 7.72681C6.6157 7.9001 6.64628 8.10398 6.64628 8.32824C6.64628 8.56269 6.6055 8.77676 6.52396 8.98063C6.44241 9.18451 6.33028 9.36799 6.18756 9.5107C6.04485 9.66361 5.87156 9.77574 5.66769 9.86748C5.46381 9.94903 5.23955 10 4.9949 10C4.75026 10 4.52599 9.95923 4.32212 9.86748C4.11825 9.78593 3.94495 9.66361 3.80224 9.5107C3.65953 9.3578 3.5474 9.18451 3.46585 8.98063C3.3843 8.77676 3.34353 8.56269 3.34353 8.32824C3.34353 8.10398 3.37411 7.9001 3.44546 7.72681C3.51682 7.55352 3.59837 7.39042 3.70031 7.23751C3.80224 7.08461 3.91437 6.95209 4.0367 6.80938C4.15902 6.67686 4.27115 6.52396 4.38328 6.37105C4.49541 6.21814 4.58716 6.04485 4.66871 5.86137C4.75026 5.67788 4.80122 5.45362 4.82161 5.20897C4.56677 5.22936 4.3527 5.28033 4.15902 5.35168C3.96534 5.43323 3.80224 5.52497 3.63914 5.62691C3.48624 5.73904 3.33333 5.85117 3.20082 5.9735C3.0683 6.09582 2.92559 6.20795 2.77268 6.30989C2.61978 6.41183 2.46687 6.49337 2.28338 6.56473C2.0999 6.63609 1.90622 6.66667 1.68196 6.66667C1.4475 6.66667 1.22324 6.62589 1.01937 6.54434C0.815494 6.46279 0.642202 6.35066 0.489297 6.20795C0.336391 6.06524 0.224261 5.89195 0.132518 5.68807C0.0509684 5.4842 0 5.25994 0 5.01529C0 4.77064 0.0407747 4.54638 0.132518 4.34251C0.224261 4.13863 0.336391 3.96534 0.489297 3.81244C0.642202 3.65953 0.815494 3.5474 1.01937 3.46585C1.22324 3.3843 1.43731 3.34353 1.68196 3.34353C1.90622 3.34353 2.11009 3.37411 2.28338 3.44546C2.45668 3.51682 2.61978 3.59837 2.77268 3.70031C2.92559 3.80224 3.0683 3.91437 3.20082 4.0367C3.33333 4.15902 3.48624 4.28135 3.63914 4.38328C3.79205 4.49541 3.96534 4.58716 4.15902 4.66871C4.3527 4.75026 4.56677 4.80122 4.82161 4.82161C4.80122 4.56677 4.76045 4.34251 4.6789 4.14883C4.59735 3.95515 4.48522 3.78186 4.38328 3.62895C4.27115 3.47604 4.15902 3.33333 4.0367 3.19062C3.91437 3.0581 3.80224 2.91539 3.70031 2.76249C3.59837 2.60958 3.50663 2.45668 3.44546 2.27319C3.3843 2.0897 3.34353 1.89602 3.34353 1.67176C3.34353 1.43731 3.3843 1.22324 3.46585 1.01937C3.5474 0.815494 3.65953 0.642202 3.80224 0.489297C3.94495 0.336391 4.11825 0.224261 4.32212 0.132518C4.52599 0.0407747 4.75026 0 4.9949 0C5.23955 0 5.46381 0.0407747 5.66769 0.132518C5.87156 0.224261 6.04485 0.336391 6.18756 0.489297C6.33028 0.642202 6.44241 0.815494 6.52396 1.01937C6.6055 1.22324 6.64628 1.43731 6.64628 1.67176Z"
+                                                fill="currentColor" />
+                                        </svg><span>Chính sách bán hàng</span></a><a class="linkItem"
+                                        href="javascript:void(0);" title="Hướng dẫn mua hàng"><svg width="10"
+                                            height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.64628 1.67176C6.64628 1.90622 6.6157 2.11009 6.54434 2.28338C6.47299 2.45668 6.39144 2.61978 6.2895 2.76249C6.18756 2.91539 6.07543 3.0581 5.95311 3.19062C5.83079 3.32314 5.71865 3.47604 5.60652 3.62895C5.49439 3.78186 5.40265 3.95515 5.33129 4.14883C5.25994 4.34251 5.20897 4.56677 5.18858 4.82161C5.44343 4.80122 5.65749 4.75026 5.85117 4.66871C6.04485 4.58716 6.20795 4.49541 6.37105 4.38328C6.52396 4.27115 6.67686 4.15902 6.80938 4.0367C6.9419 3.91437 7.08461 3.80224 7.23751 3.70031C7.39042 3.59837 7.54332 3.50663 7.72681 3.44546C7.9001 3.37411 8.10398 3.34353 8.32824 3.34353C8.56269 3.34353 8.77676 3.3843 8.98063 3.46585C9.18451 3.5474 9.3578 3.65953 9.5107 3.81244C9.66361 3.96534 9.77574 4.13863 9.86748 4.34251C9.94903 4.54638 10 4.77064 10 5.01529C10 5.25994 9.95923 5.4842 9.86748 5.68807C9.78593 5.89195 9.66361 6.06524 9.5107 6.20795C9.3578 6.35066 9.18451 6.46279 8.98063 6.54434C8.77676 6.62589 8.56269 6.66667 8.32824 6.66667C8.10398 6.66667 7.9001 6.63609 7.72681 6.56473C7.55352 6.49337 7.39042 6.41183 7.23751 6.30989C7.08461 6.20795 6.9419 6.09582 6.80938 5.9735C6.67686 5.85117 6.52396 5.73904 6.37105 5.62691C6.21814 5.51478 6.04485 5.42304 5.85117 5.35168C5.65749 5.27013 5.44343 5.22936 5.18858 5.20897C5.20897 5.45362 5.25994 5.67788 5.33129 5.86137C5.41284 6.04485 5.50459 6.21814 5.60652 6.37105C5.71865 6.52396 5.83079 6.67686 5.95311 6.80938C6.07543 6.9419 6.18756 7.08461 6.2895 7.23751C6.39144 7.39042 6.47299 7.54332 6.54434 7.72681C6.6157 7.9001 6.64628 8.10398 6.64628 8.32824C6.64628 8.56269 6.6055 8.77676 6.52396 8.98063C6.44241 9.18451 6.33028 9.36799 6.18756 9.5107C6.04485 9.66361 5.87156 9.77574 5.66769 9.86748C5.46381 9.94903 5.23955 10 4.9949 10C4.75026 10 4.52599 9.95923 4.32212 9.86748C4.11825 9.78593 3.94495 9.66361 3.80224 9.5107C3.65953 9.3578 3.5474 9.18451 3.46585 8.98063C3.3843 8.77676 3.34353 8.56269 3.34353 8.32824C3.34353 8.10398 3.37411 7.9001 3.44546 7.72681C3.51682 7.55352 3.59837 7.39042 3.70031 7.23751C3.80224 7.08461 3.91437 6.95209 4.0367 6.80938C4.15902 6.67686 4.27115 6.52396 4.38328 6.37105C4.49541 6.21814 4.58716 6.04485 4.66871 5.86137C4.75026 5.67788 4.80122 5.45362 4.82161 5.20897C4.56677 5.22936 4.3527 5.28033 4.15902 5.35168C3.96534 5.43323 3.80224 5.52497 3.63914 5.62691C3.48624 5.73904 3.33333 5.85117 3.20082 5.9735C3.0683 6.09582 2.92559 6.20795 2.77268 6.30989C2.61978 6.41183 2.46687 6.49337 2.28338 6.56473C2.0999 6.63609 1.90622 6.66667 1.68196 6.66667C1.4475 6.66667 1.22324 6.62589 1.01937 6.54434C0.815494 6.46279 0.642202 6.35066 0.489297 6.20795C0.336391 6.06524 0.224261 5.89195 0.132518 5.68807C0.0509684 5.4842 0 5.25994 0 5.01529C0 4.77064 0.0407747 4.54638 0.132518 4.34251C0.224261 4.13863 0.336391 3.96534 0.489297 3.81244C0.642202 3.65953 0.815494 3.5474 1.01937 3.46585C1.22324 3.3843 1.43731 3.34353 1.68196 3.34353C1.90622 3.34353 2.11009 3.37411 2.28338 3.44546C2.45668 3.51682 2.61978 3.59837 2.77268 3.70031C2.92559 3.80224 3.0683 3.91437 3.20082 4.0367C3.33333 4.15902 3.48624 4.28135 3.63914 4.38328C3.79205 4.49541 3.96534 4.58716 4.15902 4.66871C4.3527 4.75026 4.56677 4.80122 4.82161 4.82161C4.80122 4.56677 4.76045 4.34251 4.6789 4.14883C4.59735 3.95515 4.48522 3.78186 4.38328 3.62895C4.27115 3.47604 4.15902 3.33333 4.0367 3.19062C3.91437 3.0581 3.80224 2.91539 3.70031 2.76249C3.59837 2.60958 3.50663 2.45668 3.44546 2.27319C3.3843 2.0897 3.34353 1.89602 3.34353 1.67176C3.34353 1.43731 3.3843 1.22324 3.46585 1.01937C3.5474 0.815494 3.65953 0.642202 3.80224 0.489297C3.94495 0.336391 4.11825 0.224261 4.32212 0.132518C4.52599 0.0407747 4.75026 0 4.9949 0C5.23955 0 5.46381 0.0407747 5.66769 0.132518C5.87156 0.224261 6.04485 0.336391 6.18756 0.489297C6.33028 0.642202 6.44241 0.815494 6.52396 1.01937C6.6055 1.22324 6.64628 1.43731 6.64628 1.67176Z"
+                                                fill="currentColor" />
+                                        </svg><span>Hướng dẫn mua hàng</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl colItem">
+                            <div class="contentCol v4">
+                                <div class="titleFooter">Kết nối với chúng tôi</div>
+                                <div class="clearfix wrapSocial">
+                                    <div class="listItem"><a class="linkItem" href="javascript:void(0);"><img
+                                                src="./images/Icons-svg/socials-footer/facebook.svg"
+                                                alt="Facebook"></a><a class="linkItem" href="javascript:void(0);"><img
+                                                src="./images/Icons-svg/socials-footer/instagram.svg"
+                                                alt="Instagram"></a><a class="linkItem" href="javascript:void(0);"><img
+                                                src="./images/Icons-svg/socials-footer/youtube.svg" alt="Youtube"></a><a
+                                            class="linkItem" href="javascript:void(0);"><img
+                                                src="./images/Icons-svg/socials-footer/zalo.svg" alt="Zalo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapMinistryLogo"><img src="./images/logo/bo-cong-thuong.png" alt="Bộ công thương">
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
+        </div>
+
+        <div class="wrapCopyright bgColor4">
+            <div class="container-xxl">
+                <div class="colCopyRight">
+                    <div class="titleCopyright">
+                        <p style="color: #fff">© Bản quyền thuộc về HSkin Care</p>
+                    </div>
+                    <div class="titleDeveloper"><a target="_blank" href="https://www.sweetsoft.vn/"
+                            title="Nha Trang web design, Nha Trang web design, Khanh Hoa web design, company, software, informatics">Thiết
+                            kế và phát triển bởi SweetSoft JSC</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <footer class="footer">
         <div class="container-xxl">
             <div class="footer-row">
                 <div class=" footer-row-colum">
@@ -918,7 +1185,9 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <div class="wrapBtnScrollTop"><a class="linkItem" href="javascript:void(0);" title="Top"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg></a></div>
+
     <script src="./js/lib.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/home.js"></script>
