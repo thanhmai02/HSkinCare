@@ -212,7 +212,7 @@ if ($(".wrapNewSlide").length) {
   })
 }
 
-/* ===================== Count Down Promotion ===================== */
+/* ===================== Handle Update Cart ===================== */
 $(".btn-cart").each(function(i, e) {
   $(this).on("click", () => {
     const val = $(".wrap-cart-header .text-qtt").text();
