@@ -348,6 +348,76 @@ body {
 }
 
 /* =============================
+        HEADER SUB MENU
+============================= */
+.header {
+    .header-top--left-item,
+    .header-top--right-item {
+        &.subMenu {
+            position: relative;
+        }
+  
+        &:hover {
+            .wrapSubMenuHeader {
+                pointer-events: all;
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+  
+    .btnDropdownMenuSub {
+        display: inline-block;
+    }
+  
+    .wrapSubMenuHeader {
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        z-index: 991;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in;
+        padding-top: 15px;
+        min-width: calc(100% + 30px);
+        max-width: 350px;
+        transform: translateY(16px);
+  
+        .listMenuHeader {
+            list-style: none;
+            padding: 5px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
+            border: 1px solid #e5e5e5;
+        }
+  
+        .linkMenuHeader {
+            text-transform: capitalize;
+            font-size: 18px;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+            padding: 5px 0;
+            color: #202020;
+            font-weight: 400;
+            text-decoration:  none;
+            transition: .5s;
+            font-family: Quicksand-Regular;
+            display: block;
+  
+            &:hover {
+                color: $color3;
+            }
+        }
+    }
+  }
+
+/* =============================
         HEADER LANGUAGE
 ============================= */
 .header {
