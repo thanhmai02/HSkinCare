@@ -1,3 +1,7 @@
+body, html{
+    scroll-behavior: smooth;
+}
+
 .container-xxl {
     max-width: 1368px;
     width: 100%;
@@ -31,6 +35,21 @@
     height: 50px;
     border: none;
     border-radius: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $color2;
+    text-decoration: none !important;
+
+    @include downXxl {
+        height: 46px;
+        font-size: 16px;
+      }
+    
+      @include downMd {
+        height: 38px;
+        font-size: 14px;
+      }
 
     @include downXxl {
         height: 46px;

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href=".//scss/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="">
+    <link rel='shortcut icon' href='./images/background/about-1.png' />
+    <title>SkinCare</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="head">
+            <div class="container-xxl">
+                <div class="header-top">
+                    <ul class="header-top--left">
+                        <div class="wrapBtnCtrMenuHeader">
+                            <div class="btnCtrMenu">
+                                <svg class="iconOpen" aria-hidden="true" focusable="false" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
+                                    </path>
+                                </svg>
+
+                                <svg class="iconClose" aria-hidden="true" focusable="false" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512">
+                                    <path fill="currentColor"
+                                        d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <li class="header-top--left-item"><a href="#"><svg width="24" height="27" viewBox="0 0 24 27"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.404 1.40334C10.8541 1.03461 11.4181 0.83313 12 0.83313C12.5819 0.83313 13.1458 1.03461 13.596 1.40334L22.3793 8.56468C22.6782 8.80971 22.9188 9.11812 23.0838 9.4676C23.2488 9.81708 23.334 10.1989 23.3333 10.5853V23.5753C23.3333 25.0067 22.192 26.1667 20.7833 26.1667H17.2166C15.808 26.1667 14.6666 25.0067 14.6666 23.5753V17.4247C14.6666 16.9473 14.2866 16.5607 13.8166 16.5607H10.1833C9.71396 16.5607 9.3333 16.9473 9.3333 17.4247V23.5753C9.3333 25.0067 8.19196 26.1667 6.7833 26.1667H3.21663C1.80863 26.1667 0.666631 25.0067 0.666631 23.5753V10.5853C0.665908 10.1989 0.75113 9.81708 0.916126 9.4676C1.08112 9.11812 1.32176 8.80971 1.62063 8.56468L10.404 1.40334ZM12.532 2.75068C12.3819 2.62785 12.1939 2.56074 12 2.56074C11.806 2.56074 11.6181 2.62785 11.468 2.75068L2.68463 9.91135C2.58497 9.99309 2.50474 10.096 2.44974 10.2125C2.39474 10.3291 2.36636 10.4565 2.36663 10.5853V23.5753C2.36663 24.0527 2.74663 24.4393 3.21663 24.4393H6.7833C7.25263 24.4393 7.6333 24.0527 7.6333 23.5753V17.4247C7.6333 15.9933 8.7753 14.8333 10.1833 14.8333H13.8166C15.2246 14.8333 16.3666 15.9933 16.3666 17.4247V23.5753C16.3666 24.0527 16.7466 24.4393 17.2166 24.4393H20.7833C21.2526 24.4393 21.6333 24.0527 21.6333 23.5753V10.5853C21.6337 10.4565 21.6053 10.3293 21.5503 10.2128C21.4953 10.0963 21.415 9.99356 21.3153 9.91201L12.532 2.75068Z"
+                                        fill="currentColor" stroke="currentColor" />
+                                </svg></a></li>
+                        <li class="header-top--left-item"><a href="#">Sản phẩm</a><i class="fa fa-angle-down"
+                                style="font-size:15px; margin: 0 3px;"></i></li>
+                        <li class="header-top--left-item"><a href="#">Giới thiệu</a></li>
+                        <li class="header-top--left-item"><a href="#">Khuyến mãi <i class="fa fa-angle-down"
+                                    style="font-size:15px; margin: 0 3px"></i></a>
+                        </li>
+                    </ul>
+                    <div class="logo"><img src="./images/logo/logo.png" alt="#"></div>
+                    <ul class="header-top--right">
+                        <li class="header-top--right-item"><a href="#">Tin tức</a><i class="fa fa-angle-down"
+                                style="font-size:15px; margin: 0 3px"></i></li>
+                        <li class="header-top--right-item"><a href="#">Đại lý</a><i class="fa fa-angle-down"
+                                style="font-size:15px; margin: 0 3px"></i></li>
+                        <li class="header-top--right-item"><a href="#">Liên hệ</a></li>
+                        <li class="header-top--right-item wrap-cart-header">
+                            <div class="">
+                                <i class="fa fa-shopping-basket" style="font-size:24px;"></i>
+                                <div class="text-qtt">0</div>
+                            </div>
+                        </li>
+                        <li class="header-top--right-item header-language">
+                            <div class="language-content">
+                                <div class="language-btn"><img src="images/language/vi.jpg" alt="Việt Nam">
+                                    <div class="dropdown-btn">
+                                        <i class="fa fa-angle-down" style="font-size:15px;"></i>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-languge">
+                                    <div class="content-list">
+                                        <a href="javascript:void(0);" title="Việt Nam"><img src="images/language/vi.jpg"
+                                                alt="Việt Nam"></a>
+                                        <a href="javascript:void(0);" title="English"><img src="images/language/en.jpg"
+                                                alt="English"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="wrap-menu-mobile">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a class="link-item" href="#">Trang chủ</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Sản phẩm</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Giới thiệu</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Khuyến mãi</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Tin tức</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Đại lý</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link-item" href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="wrap-bg-menu-mobile"></div>
+    </header>
+
+
+    <main class="wrapNewsLayout">
+        <div class="bgSection" style="background-image: url(./images/background/1.png);">
+
+        </div>
+        <div class="wrapBreadcrumb titleCenter">
+            <div class="position-relative">
+                <div class="wrapImgItem">
+                    <div class="wrapImgResize"><img src="./images/breadcrumb/2.jpg" alt="Tin tức &amp; làm đẹp" /></div>
+                </div>
+                <div class="wrapTitle">
+                    <h1 class="titleMain">Tin tức &amp; làm đẹp<img src="./images/logo/bough-logo.png"
+                            alt="bough logo" />
+                    </h1>
+                </div>
+            </div>
+            <div class="contentText">
+                <div class="container-xxl">
+                    <div class="clearfix contentItem">
+                        <div class="wrapMenu"><a class="linkItem" href="index.html" title="Trang Chủ"><span><svg
+                                        width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.404 1.40334C10.8541 1.03461 11.4181 0.83313 12 0.83313C12.5819 0.83313 13.1458 1.03461 13.596 1.40334L22.3793 8.56468C22.6782 8.80971 22.9188 9.11812 23.0838 9.4676C23.2488 9.81708 23.334 10.1989 23.3333 10.5853V23.5753C23.3333 25.0067 22.192 26.1667 20.7833 26.1667H17.2166C15.808 26.1667 14.6666 25.0067 14.6666 23.5753V17.4247C14.6666 16.9473 14.2866 16.5607 13.8166 16.5607H10.1833C9.71396 16.5607 9.3333 16.9473 9.3333 17.4247V23.5753C9.3333 25.0067 8.19196 26.1667 6.7833 26.1667H3.21663C1.80863 26.1667 0.666631 25.0067 0.666631 23.5753V10.5853C0.665908 10.1989 0.75113 9.81708 0.916126 9.4676C1.08112 9.11812 1.32176 8.80971 1.62063 8.56468L10.404 1.40334ZM12.532 2.75068C12.3819 2.62785 12.1939 2.56074 12 2.56074C11.806 2.56074 11.6181 2.62785 11.468 2.75068L2.68463 9.91135C2.58497 9.99309 2.50474 10.096 2.44974 10.2125C2.39474 10.3291 2.36636 10.4565 2.36663 10.5853V23.5753C2.36663 24.0527 2.74663 24.4393 3.21663 24.4393H6.7833C7.25263 24.4393 7.6333 24.0527 7.6333 23.5753V17.4247C7.6333 15.9933 8.7753 14.8333 10.1833 14.8333H13.8166C15.2246 14.8333 16.3666 15.9933 16.3666 17.4247V23.5753C16.3666 24.0527 16.7466 24.4393 17.2166 24.4393H20.7833C21.2526 24.4393 21.6333 24.0527 21.6333 23.5753V10.5853C21.6337 10.4565 21.6053 10.3293 21.5503 10.2128C21.4953 10.0963 21.415 9.99356 21.3153 9.91201L12.532 2.75068Z"
+                                            fill="currentColor" stroke="currentColor" />
+                                    </svg></span><svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.242496 11.7628C0.0808333 11.6047 1.99631e-06 11.4176 1.95849e-06 11.2013C1.92068e-06 10.985 0.0808331 10.798 0.242496 10.6403L4.97921 6.00791L0.226328 1.35968C0.0754427 1.21212 1.79683e-07 1.02767 1.40982e-07 0.806324C1.02281e-07 0.58498 0.0808313 0.395257 0.242494 0.237154C0.404156 0.0790513 0.595565 -1.04132e-07 0.816719 -1.428e-07C1.03787 -1.81468e-07 1.22907 0.0790512 1.3903 0.237154L6.82216 5.56522C6.88683 5.62846 6.93274 5.69697 6.9599 5.77075C6.98706 5.84453 7.00042 5.92358 6.99999 6.0079C6.99999 6.09223 6.98641 6.17128 6.95925 6.24506C6.93209 6.31884 6.88639 6.38735 6.82216 6.45059L1.37413 11.7787C1.22325 11.9262 1.03723 12 0.816074 12C0.59492 12 0.403727 11.9209 0.242496 11.7628Z"
+                                        fill="currentColor" />
+                                </svg></a><a class="linkItem titleLineSlide" href="javascript:void(0);"
+                                title="Tin tức &amp; làm đẹp">Tin tức &amp; làm đẹp<svg width="7" height="12"
+                                    viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.242496 11.7628C0.0808333 11.6047 1.99631e-06 11.4176 1.95849e-06 11.2013C1.92068e-06 10.985 0.0808331 10.798 0.242496 10.6403L4.97921 6.00791L0.226328 1.35968C0.0754427 1.21212 1.79683e-07 1.02767 1.40982e-07 0.806324C1.02281e-07 0.58498 0.0808313 0.395257 0.242494 0.237154C0.404156 0.0790513 0.595565 -1.04132e-07 0.816719 -1.428e-07C1.03787 -1.81468e-07 1.22907 0.0790512 1.3903 0.237154L6.82216 5.56522C6.88683 5.62846 6.93274 5.69697 6.9599 5.77075C6.98706 5.84453 7.00042 5.92358 6.99999 6.0079C6.99999 6.09223 6.98641 6.17128 6.95925 6.24506C6.93209 6.31884 6.88639 6.38735 6.82216 6.45059L1.37413 11.7787C1.22325 11.9262 1.03723 12 0.816074 12C0.59492 12 0.403727 11.9209 0.242496 11.7628Z"
+                                        fill="#323232" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="news-main wrap-content2">
+            <div class="container-xxl">
+                <div class="blog-edit">
+                    <div class="news-main--blog">
+                        <div class="row rowList">
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <img class="experience-image" src="./images/news/1.jpg" alt="#">
+                                        <div class="blog">
+                                            <h3>Serum Dưỡng Da Tinh Chất Từ Yến Đầu Tiên Ở Việt Nam</h3>
+                                            <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng,
+                                                chất
+                                                xơ và
+                                                18 loại
+                                                axit amin khác. Ngoài các tác dụng tăng cường sức khỏe, tổ yến
+                                                còn
+                                                có
+                                                tác dụng
+                                                đặc
+                                                biệt trong việc chăm sóc da ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <img class="experience-image" src="./images/news/2.jpg" alt="#">
+                                        <div class="blog">
+                                            <h3>HSkin Care Đã Có Mặt Tại Thành Phố Nha Trang</h3>
+                                            <p>Bên cạnh công dụng bồi bổ sức khỏe, yến sào còn được biết đến là
+                                                một
+                                                loại
+                                                nguyên
+                                                liệu làm đẹp và chăm sóc da tuyệt vời cho chị em phụ nữ. Sau đây
+                                                hãy
+                                                cùng HSkin
+                                                Care khám phá ngay cách làm đẹp ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <img class="experience-image" src="./images/news/3.jpg" alt="#">
+                                        <div class="blog">
+                                            <h3>Những Món Quà Ý Nghĩa Cho Các Dịp Lễ Tết</h3>
+                                            <p>Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng
+                                                đối
+                                                với
+                                                sức khỏe
+                                                và sắc đẹp. Tuy nhiên, có nhiều chị em vẫn thường thắc liệu uống
+                                                nước
+                                                yến có đẹp
+                                                da không? Hãy cùng HSkin Care ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <div class="wrapImgResize img16And9 ">
+                                            <img class="experience-image " src="./images/news/4.jpg" alt="#">
+
+                                        </div>
+                                        <div class="blog">
+                                            <h3>Serum Dưỡng Da Tinh Chất Từ Yến Đầu Tiên Ở Việt Nam</h3>
+                                            <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng,
+                                                chất
+                                                xơ và
+                                                18 loại
+                                                axit amin khác. Ngoài các tác dụng tăng cường sức khỏe, tổ yến
+                                                còn
+                                                có
+                                                tác dụng
+                                                đặc
+                                                biệt trong việc chăm sóc da ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <img class="experience-image" src="./images/news/2.jpg" alt="#">
+                                        <div class="blog">
+                                            <h3>HSkin Care Đã Có Mặt Tại Thành Phố Nha Trang</h3>
+                                            <p>Bên cạnh công dụng bồi bổ sức khỏe, yến sào còn được biết đến là
+                                                một
+                                                loại
+                                                nguyên
+                                                liệu làm đẹp và chăm sóc da tuyệt vời cho chị em phụ nữ. Sau đây
+                                                hãy
+                                                cùng HSkin
+                                                Care khám phá ngay cách làm đẹp ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <img class="experience-image" src="./images/news/3.jpg" alt="#">
+                                        <div class="blog">
+                                            <h3>Những Món Quà Ý Nghĩa Cho Các Dịp Lễ Tết</h3>
+                                            <p>Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng
+                                                đối
+                                                với
+                                                sức khỏe
+                                                và sắc đẹp. Tuy nhiên, có nhiều chị em vẫn thường thắc liệu uống
+                                                nước
+                                                yến có đẹp
+                                                da không? Hãy cùng HSkin Care ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <img class="experience-image" src="./images/news/1.jpg" alt="#">
+                                        <div class="blog">
+                                            <h3>Serum Dưỡng Da Tinh Chất Từ Yến Đầu Tiên Ở Việt Nam</h3>
+                                            <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng,
+                                                chất
+                                                xơ và
+                                                18 loại
+                                                axit amin khác. Ngoài các tác dụng tăng cường sức khỏe, tổ yến
+                                                còn
+                                                có
+                                                tác dụng
+                                                đặc
+                                                biệt trong việc chăm sóc da ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <img class="experience-image" src="./images/news/2.jpg" alt="#">
+                                        <div class="blog">
+                                            <h3>HSkin Care Đã Có Mặt Tại Thành Phố Nha Trang</h3>
+                                            <p>Bên cạnh công dụng bồi bổ sức khỏe, yến sào còn được biết đến là
+                                                một
+                                                loại
+                                                nguyên
+                                                liệu làm đẹp và chăm sóc da tuyệt vời cho chị em phụ nữ. Sau đây
+                                                hãy
+                                                cùng HSkin
+                                                Care khám phá ngay cách làm đẹp ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 colItem">
+                                <div class=" experience-main--introduce-product-item">
+                                    <div class="experience-main--introduce-product-item-mains">
+                                        <img class="experience-image" src="./images/news/3.jpg" alt="#">
+                                        <div class="blog">
+                                            <h3>Những Món Quà Ý Nghĩa Cho Các Dịp Lễ Tết</h3>
+                                            <p>Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng
+                                                đối
+                                                với
+                                                sức khỏe
+                                                và sắc đẹp. Tuy nhiên, có nhiều chị em vẫn thường thắc liệu uống
+                                                nước
+                                                yến có đẹp
+                                                da không? Hãy cùng HSkin Care ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="contentMain bgColorFooter">
+            <div class="container-xxl">
+                <div class="contentItem">
+                    <div class="wrapSubscribe">
+                        <h3 class="titleMain">Đăng Ký để nhận ưu đãi độc quyền</h3>
+                    </div>
+                    <div class="frmFooter">
+                        <div class="formContent">
+                            <div class="inputGroupItem">
+                                <input class="inputItem" type="text" placeholder="Nhập Email của bạn">
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="inputGroupItem">
+                                <input class="inputItem" type="text" placeholder="Số điện thoại">
+                            </div>
+                        </div>
+                        <button class="btnSend but">Đăng Ký</button>
+                    </div>
+                </div>
+
+                <hr class="separator">
+                <div class="contentItem">
+                    <div class="row rowList">
+
+
+                        <div class="col-sm-6 col-xl colItem">
+                            <div class="contentCol v1">
+                                <div class="titleFooter">thông tin liên hệ</div>
+                                <div class="wrapMenu wrapContact wrapIconAndText"><a class="linkItem"
+                                        href="https://maps.app.goo.gl/rZnc5nW8ar8JgFZa9"
+                                        title="27A Lê Lợi, P. Xương Huân, Nha Trang, Khánh Hoà." target="_blank"><svg
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512">
+                                            <path
+                                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                                        </svg><span>27A Lê Lợi, P. Xương Huân, Nha Trang, Khánh Hoà.</span></a>
+                                    <div class="linkItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.976 17.2139L17.6989 15.491C17.931 15.2618 18.2246 15.1049 18.5441 15.0394C18.8635 14.9739 19.1952 15.0025 19.4987 15.1218L21.5985 15.9602C21.9052 16.0847 22.1683 16.2972 22.3544 16.5709C22.5406 16.8447 22.6415 17.1674 22.6445 17.4985V21.3442C22.6427 21.5694 22.5954 21.7919 22.5054 21.9983C22.4153 22.2047 22.2844 22.3908 22.1206 22.5453C21.9568 22.6998 21.7634 22.8195 21.552 22.8973C21.3407 22.9751 21.1158 23.0093 20.8909 22.9979C6.1771 22.0826 3.20819 9.62239 2.64672 4.85368C2.62065 4.6195 2.64447 4.38246 2.71659 4.15814C2.78872 3.93383 2.90752 3.72733 3.06519 3.55223C3.22285 3.37713 3.4158 3.23739 3.63135 3.14222C3.84689 3.04704 4.08015 2.99859 4.31577 3.00003H8.03075C8.36226 3.00101 8.68589 3.10115 8.96003 3.28756C9.23416 3.47397 9.44626 3.73814 9.56904 4.04607L10.4074 6.14584C10.5307 6.44817 10.5621 6.78011 10.4978 7.10021C10.4335 7.4203 10.2763 7.71436 10.0459 7.94565L8.32302 9.66854C8.32302 9.66854 9.31522 16.3832 15.976 17.2139Z"
+                                                fill="currentColor" />
+                                        </svg><span> <a href="tel:02583818468"
+                                                title="0258.3818468">0258.3818468</a><span
+                                                style="margin: 0 4px;">-</span></span><span> <a href="tel:0905161468"
+                                                title="0905.161.468">0905.161.468</a></span>
+                                    </div><a class="linkItem" href="mailto:myphamhskincare@gmail.com"
+                                        title="myphamhskincare@gmail.com" target=""><svg width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_5663_11320)">
+                                                <path
+                                                    d="M22.6365 5.008C22.5423 4.99733 22.4473 4.99733 22.3531 5.008H3.00275C2.87873 5.0101 2.75553 5.03054 2.63647 5.06877L12.6227 16L22.6365 5.008Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M24.5465 7L13.6265 16.6196C13.3454 16.8668 12.9653 17.0055 12.569 17.0055C12.1727 17.0055 11.7925 16.8668 11.5115 16.6196L0.688975 7.07298C0.655704 7.18114 0.638064 7.2926 0.636475 7.40469V20.6732C0.636475 21.0251 0.79451 21.3625 1.07581 21.6114C1.35712 21.8602 1.73865 22 2.13647 22H23.1365C23.5343 22 23.9158 21.8602 24.1971 21.6114C24.4784 21.3625 24.6365 21.0251 24.6365 20.6732V7.40469C24.6305 7.26647 24.6001 7.12992 24.5465 7V7ZM3.16397 20.6732H2.12147V19.7245L7.57397 14.9412L8.63147 15.8766L3.16397 20.6732ZM23.1215 20.6732H22.0715L16.604 15.8766L17.6615 14.9412L23.114 19.7245L23.1215 20.6732Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_5663_11320">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg><span>myphamhskincare@gmail.com</span></a><a class="linkItem"
+                                        href="javascript:void(0);"
+                                        title="GPKD số: 4201487334 do Sở Kế hoạch và Đầu tư tỉnh Khánh Hòa cấp ngày 25/5/2012"
+                                        target=""><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <path
+                                                d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM64 112c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112zm0 256c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V368zm144 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H208c-8.8 0-16-7.2-16-16s7.2-16 16-16zM192 128c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H208c-8.8 0-16-7.2-16-16zm16 112H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H208c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-52.7-27.3c6.2 6.2 6.2 16.4 0 22.6l-48 48c-6.2 6.2-16.4 6.2-22.6 0l-24-24c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L96 249.4l36.7-36.7c6.2-6.2 16.4-6.2 22.6 0z" />
+                                        </svg> <span>GPKD số: 4201487334 do Sở Kế hoạch và Đầu tư tỉnh Khánh Hòa cấp
+                                            ngày 25/5/2012</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl colItem">
+                            <div class="contentCol v2">
+                                <div class="titleFooter">Khách hàng</div>
+                                <div class="wrapMenu"><a class="linkItem" href="javascript:void(0);"
+                                        title="Chính sách đổi trả"><i class="fa fa-snowflake-o"
+                                            style="font-size:10px; color: #555555; margin-right: 10px"></i><span>Chính
+                                            sách đổi trả</span></a><a class="linkItem" href="javascript:void(0);"
+                                        title="Điều khoản và điều kiện"><i class="fa fa-snowflake-o"
+                                            style="font-size:10px; color: #555555; margin-right: 10px"></i><span>Điều
+                                            khoản và điều kiện</span></a><a class="linkItem" href="javascript:void(0);"
+                                        title="Những câu hỏi thường gặp"><i class="fa fa-snowflake-o"
+                                            style="font-size:10px; color: #555555; margin-right: 10px"></i><span>Những
+                                            câu hỏi thường gặp</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl colItem">
+                            <div class="contentCol v3">
+                                <div class="titleFooter">sản phẩm</div>
+
+                                <div class="wrapMenu"><a class="linkItem" href="javascript:void(0);"
+                                        title="Chính sách bán hàng"><i class="fa fa-snowflake-o"
+                                            style="font-size:10px; color: #555555; margin-right: 10px"></i><span>Chính
+                                            sách bán hàng</span></a><a class="linkItem" href="javascript:void(0);"
+                                        title="Hướng dẫn mua hàng"><i class="fa fa-snowflake-o"
+                                            style="font-size:10px; color: #555555; margin-right: 10px"></i><span>Hướng
+                                            dẫn mua hàng</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl colItem">
+                            <div class="contentCol v4">
+                                <div class="titleFooter">Kết nối với chúng tôi</div>
+                                <div class="clearfix wrapSocial">
+                                    <div class="listItem"><a class="linkItem" href="javascript:void(0);"><img
+                                                src="./images/Icons-svg/socials-footer/facebook.svg"
+                                                alt="Facebook"></a><a class="linkItem" href="javascript:void(0);"><img
+                                                src="./images/Icons-svg/socials-footer/instagram.svg"
+                                                alt="Instagram"></a><a class="linkItem" href="javascript:void(0);"><img
+                                                src="./images/Icons-svg/socials-footer/youtube.svg" alt="Youtube"></a><a
+                                            class="linkItem" href="javascript:void(0);"><img
+                                                src="./images/Icons-svg/socials-footer/zalo.svg" alt="Zalo"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapMinistryLogo"><img src="./images/logo/bo-cong-thuong.png" alt="Bộ công thương">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapCopyright bgColor4">
+            <div class="container-xxl">
+                <div class="colCopyRight">
+                    <div class="titleCopyright">
+                        <p style="color: #fff">© Bản quyền thuộc về HSkin Care</p>
+                    </div>
+                    <div class="titleDeveloper"><a target="_blank" href="https://www.sweetsoft.vn/"
+                            title="Nha Trang web design, Nha Trang web design, Khanh Hoa web design, company, software, informatics">Thiết
+                            kế và phát triển bởi SweetSoft JSC</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="wrapBtnScrollTop"><a class="linkItem" href="javascript:void(0);" title="Top"><svg fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+            </svg></a></div>
+
+    <script src="./js/lib.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

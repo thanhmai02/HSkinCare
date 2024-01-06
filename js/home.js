@@ -213,15 +213,6 @@ if ($(".wrapNewSlide").length) {
 }
 
 /* ===================== Count Down Promotion ===================== */
-$(".btn-cart").each(function(i, e) {
-  $(this).on("click", () => {
-    const val = $(".wrap-cart-header .text-qtt").text();
-
-    $(".wrap-cart-header .text-qtt").text(Number(val) + 1)
-  })
-})
-
-/* ===================== Count Down Promotion ===================== */
 ; (function () {
   let TIMER;
   let Init = true;

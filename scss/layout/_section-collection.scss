@@ -121,3 +121,35 @@
         }
     }
 }
+
+.wrapModalImg {
+    z-index: 100;
+    .wrapImg {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .w3-modal-content {
+        width: 90% !important;
+        margin: auto !important;
+        max-width: 600px;
+
+        @include upMd {
+            max-width: 500px;
+
+            .wrapImgResize {
+                padding-top: 70%;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        max-height: 80%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,218 @@
+.wrapBreadcrumb {
+    position: relative;
+  
+    &.hideBanner {
+      @include upLg {
+        margin-top: 66px;
+      }
+  
+      .wrapTitle,
+      .wrapImgItem {
+        display: none;
+      }
+    }
+  
+    .wrapTitle {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+  
+  
+      .titleMain {
+        color: $color1;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        padding: 0 15px;
+        margin-bottom: 5px;
+        font-size: 40px;
+  
+        @include upXl {
+          max-width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  
+        @include downXxl {
+          font-size: 32px;
+        }
+  
+        @include downXl {
+          font-size: 20px;
+        }
+  
+        @include downLg {
+          font-size: 18px;
+        }
+  
+        @include downMd {
+          font-size: 16px;
+        }
+      }
+  
+      img {
+        width: 100px;
+        display: inline-block;
+        margin-left: 5px;
+  
+        @include downXl {
+          width: 60px;
+        }
+  
+        @include downLg {
+          width: 50px;
+        }
+      }
+    }
+  
+    .wrapImgItem {
+      .wrapImgResize {
+        height: 400px;
+        background-color: $color2;
+  
+        img {
+          opacity: 0.7;
+        }
+      }
+    }
+  
+    .contentText {
+      padding: 20px 0;
+      background-color: $color29;
+      border-bottom: 1px solid #ebebeb;
+  
+      @include downSm {
+        padding: 10px 0;
+      }
+    }
+  
+    .wrapMenu {
+  
+      .linkItem {
+        display: inline;
+        font-size: 20px;
+        text-transform: capitalize;
+        transition: .5s;
+        font-weight: 500;
+        text-decoration: none;
+        color: $color2;
+  
+        @include downLg {
+          font-size: 14px;
+        }
+  
+        @include downSm {
+          font-size: 12px;
+        }
+  
+        &:hover {
+          color: $color3;
+        }
+  
+        span svg {
+          width: 18px;
+          display: inline-block;
+          transform: translateY(-1px);
+  
+          @include downLg {
+            width: 16px;
+          }
+  
+          @include downSm {
+            width: 14px;
+          }
+        }
+  
+        >svg {
+          margin: 0 15px;
+          height: 12px;
+          display: inline-block;
+          transform: translate(0, -1px);
+          @include downSm {
+            height: 10px;
+            margin: 0 10px;
+          }
+        }
+  
+        &:last-child {
+          svg {
+            display: none;
+          }
+        }
+      }
+  
+      // title slide custom
+      .titleLineSlide {
+        padding-bottom: 4px;
+  
+        &::after {
+          height: 2px;
+        }
+      }
+    }
+  
+    &.smallTitle {
+      .titleMain {
+        font-size: 28px;
+  
+        &::after {
+          height: 3px;
+        }
+      }
+    }
+  }
+  
+  
+  @media (max-width: 1400px) {
+    .wrapBreadcrumb {
+      .wrapImgItem {
+        .wrapImgResize {
+          height: 300px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .wrapBreadcrumb {
+      .contentItem {
+        margin-top: unset;
+      }
+  
+      .wrapTitle {
+        margin-bottom: 5px;
+        
+      }
+  
+      .wrapImgItem {
+        .wrapImgResize {
+          height: 180px;
+        }
+      }
+  
+      .contentText {
+        top: 50%;
+      }
+  
+      &.smallTitle {
+        .titleMain {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .wrapBreadcrumb {
+      .wrapTitle {
+        transform: translateY(-50%);
+      }
+  
+      &.smallTitle {
+        .titleMain {
+          font-size: 20px;
+        }
+      }
+    }
+  }

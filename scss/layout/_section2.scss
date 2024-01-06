@@ -6,34 +6,40 @@
             text-align: right;
         }
 
-        .col-6 {
-            img {
-                max-width: 450px;
-            }
+        img {
+            max-width: 450px;
+        }
 
-            h2 {
+        h2 {
+            font-size: 35px;
+            font-family: 'CormorantGaramond-MediumItalic';
+            font-weight: 300;
+
+            @include downSm {
+                font-size: 24px;
+            }
+        }
+
+        p {
+            max-width: 550px;
+            color: #555555;
+        }
+
+        .second-main--h1 {
+            max-width: 390px;
+
+            h1 {
                 font-size: 35px;
-                font-family: 'CormorantGaramond-MediumItalic';
-                font-weight: 300;
-            }
+                font-family: 'Quicksand-Bold';
+                font-weight: 700;
+                letter-spacing: 2px;
 
-            p {
-                max-width: 550px;
-                color: #555555;
-            }
-
-            .second-main--h1 {
-                max-width: 390px;
-
-                h1 {
-                    font-size: 35px;
-                    font-family: 'Quicksand-Bold';
-                    font-weight: 700;
-                    letter-spacing: 2px;
+                @include downSm {
+                    font-size: 26px;
                 }
             }
-
         }
+
     }
 }
 
