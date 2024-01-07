@@ -3,6 +3,15 @@ function onClick(element) {
     document.getElementById("modal01").style.display = "block";
 }
 
+const prevLg = `
+<svg width="36" height="80" viewBox="0 0 36 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M36 76.588L31.649 80L0 39.966L31.652 0L36 3.416L7.7 39.966L36 76.588Z" fill="currentColor"/>
+</svg>`;
+const nextLg = `
+<svg width="36" height="80" viewBox="0 0 36 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3.412L4.351 0L36 40.034L4.348 80L0 76.584L28.3 40.034L0 3.412Z" fill="currentColor"/>
+</svg>`;
+
 function fixedMenu() {
     if ($('.header').length) {
         var windowScrollTop = $(window).scrollTop();
@@ -37,8 +46,8 @@ $('.wrap-bg-menu-mobile').on('click', function (e) {
 });
 
 $('.btnDropdownMenuSub').on('click', function (e) {
-    $(this).next('.wrapMenuHeader').slideToggle();
-    $(this).parent('.menuSub').toggleClass('activeMenu');
+    $(this).next('.wrapSubMenuHeader').slideToggle();
+    $(this).parent('.subMenu').toggleClass('activeMenu');
 
     e.preventDefault();
 });
@@ -200,8 +209,9 @@ $("[data-bs-target='#modalSubcribe']").on("click", function () {
     Timer = setInterval(ShowConffeti, 10);
 });
 
-$("#modalSubcribe .modal-footer .but").on("click", function () {
+$("#modalSubcribe").on('hide.bs.modal', function() {
     clearInterval(Timer);
+
 })
 
 /* =================== || INITIAL || =================== */
