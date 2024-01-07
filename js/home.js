@@ -266,3 +266,4 @@ const initWow = () => {
 $(window).on('load', function () {
   initWow();
 });
+
